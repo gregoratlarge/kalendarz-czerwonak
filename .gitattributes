@@ -1,0 +1,10 @@
+# Normalise everything by default.
+* text=auto
+
+# Keep generated iCalendar files byte-exact (they use CRLF line endings per RFC 5545).
+# This must come AFTER the "text=auto" rule above: the last matching pattern wins.
+*.ics -text
+
+# Binary assets.
+*.pdf binary
+*.xlsx binary

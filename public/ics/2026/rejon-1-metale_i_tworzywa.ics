@@ -1,0 +1,245 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//kalendarz-czerwonak//Odpady Czerwonak//PL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Odpady Czerwonak - Rejon 1 - Metale i tworzywa sztuczne (2026)
+X-WR-TIMEZONE:Europe/Warsaw
+X-WR-CALDESC:Metale i tworzywa sztuczne - Rejon 1\, Gmina Czerwonak\, 2026
+REFRESH-INTERVAL;VALUE=DURATION:PT24H
+X-PUBLISHED-TTL:PT24H
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260107-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260107T000000Z
+DTSTART;VALUE=DATE:20260107
+DTEND;VALUE=DATE:20260108
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260120-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260120T000000Z
+DTSTART;VALUE=DATE:20260120
+DTEND;VALUE=DATE:20260121
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260203-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260203T000000Z
+DTSTART;VALUE=DATE:20260203
+DTEND;VALUE=DATE:20260204
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260217-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260217T000000Z
+DTSTART;VALUE=DATE:20260217
+DTEND;VALUE=DATE:20260218
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260303-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260303T000000Z
+DTSTART;VALUE=DATE:20260303
+DTEND;VALUE=DATE:20260304
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260317-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260317T000000Z
+DTSTART;VALUE=DATE:20260317
+DTEND;VALUE=DATE:20260318
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260331-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260331T000000Z
+DTSTART;VALUE=DATE:20260331
+DTEND;VALUE=DATE:20260401
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260414-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260414T000000Z
+DTSTART;VALUE=DATE:20260414
+DTEND;VALUE=DATE:20260415
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260428-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260428T000000Z
+DTSTART;VALUE=DATE:20260428
+DTEND;VALUE=DATE:20260429
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260512-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260512T000000Z
+DTSTART;VALUE=DATE:20260512
+DTEND;VALUE=DATE:20260513
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260526-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260526T000000Z
+DTSTART;VALUE=DATE:20260526
+DTEND;VALUE=DATE:20260527
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260609-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260609T000000Z
+DTSTART;VALUE=DATE:20260609
+DTEND;VALUE=DATE:20260610
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260623-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260623T000000Z
+DTSTART;VALUE=DATE:20260623
+DTEND;VALUE=DATE:20260624
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260707-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260707T000000Z
+DTSTART;VALUE=DATE:20260707
+DTEND;VALUE=DATE:20260708
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260721-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260721T000000Z
+DTSTART;VALUE=DATE:20260721
+DTEND;VALUE=DATE:20260722
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260804-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260804T000000Z
+DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260805
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260818-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260818T000000Z
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260819
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260901-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260901T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260915-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260915T000000Z
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20260929-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20260929T000000Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20261013-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20261027-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20261027T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20261110-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20261110T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20261124-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20261208-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20261208T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:odpady-2026-rejon1-20261222-metale_i_tworzywa@gregoratlarge.github.io
+DTSTAMP:20261222T000000Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Odpady: Metale i tworzywa sztuczne
+CATEGORIES:Metale i tworzywa sztuczne
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

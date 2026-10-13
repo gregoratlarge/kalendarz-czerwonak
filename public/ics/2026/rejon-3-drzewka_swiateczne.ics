@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//kalendarz-czerwonak//Odpady Czerwonak//PL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Odpady Czerwonak - Rejon 3 - Bioodpady - drzewka świąteczne 
+ (2026)
+X-WR-TIMEZONE:Europe/Warsaw
+X-WR-CALDESC:Bioodpady - drzewka świąteczne - Rejon 3\, Gmina Czerwonak\,
+  2026
+REFRESH-INTERVAL;VALUE=DURATION:PT24H
+X-PUBLISHED-TTL:PT24H
+BEGIN:VEVENT
+UID:odpady-2026-rejon3-20260120-drzewka_swiateczne@gregoratlarge.github.io
+DTSTAMP:20260120T000000Z
+DTSTART;VALUE=DATE:20260120
+DTEND;VALUE=DATE:20260121
+SUMMARY:Odpady: Bioodpady - drzewka świąteczne
+CATEGORIES:Bioodpady - drzewka świąteczne
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

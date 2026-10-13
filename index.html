@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalendarz wywozu odpadów - Gmina Czerwonak</title>
+    <meta
+      name="description"
+      content="Wyszukaj swoją miejscowość i ulicę w gminie Czerwonak i subskrybuj kalendarz wywozu odpadów (ICS) lub pobierz go na telefon."
+    />
+    <meta name="color-scheme" content="light" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%91%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <h1>Kalendarz wywozu odpadów</h1>
+        <p class="tagline">Gmina Czerwonak - znajdź swój rejon i subskrybuj terminy odbioru.</p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="picker" aria-labelledby="picker-heading">
+        <h2 id="picker-heading">Znajdź swój adres</h2>
+        <div class="picker__grid">
+          <div class="field">
+            <label for="year-select">Rok</label>
+            <select id="year-select"></select>
+          </div>
+          <div class="field">
+            <label>Miejscowość</label>
+            <div id="city-combo"></div>
+          </div>
+          <div class="field">
+            <label>Ulica</label>
+            <div id="street-combo"></div>
+          </div>
+          <div class="field field--numer" id="numer-field" hidden>
+            <label for="numer-input">Numer domu</label>
+            <input id="numer-input" type="number" min="1" inputmode="numeric" placeholder="np. 12" />
+          </div>
+        </div>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+        <div id="ambiguity" class="ambiguity" hidden></div>
+      </section>
+
+      <section id="result" class="result" hidden aria-live="polite">
+        <div class="result__head">
+          <div>
+            <h2 id="region-title"></h2>
+            <p id="region-meta" class="muted"></p>
+          </div>
+          <span class="badge" id="region-badge"></span>
+        </div>
+
+        <div class="layout">
+          <div class="layout__main">
+            <div id="calendar"></div>
+            <p id="calendar-note" class="note" hidden></p>
+          </div>
+
+          <aside class="layout__aside">
+            <h3>Frakcje w kalendarzu</h3>
+            <div id="fractions" class="chips"></div>
+
+            <h3>Subskrypcja</h3>
+            <p class="muted small">
+              Subskrybuj, aby terminy aktualizowały się automatycznie. Poniższy link obejmuje wszystkie frakcje.
+            </p>
+            <div class="subscribe">
+              <a id="btn-google" class="btn" target="_blank" rel="noopener">Dodaj do Google Calendar</a>
+              <a id="btn-webcal" class="btn">Apple / Outlook (webcal)</a>
+              <button id="btn-download" class="btn btn--primary" type="button">Pobierz .ics</button>
+              <button id="btn-copy" class="btn btn--ghost" type="button">Kopiuj link subskrypcji</button>
+            </div>
+            <p class="muted small">Link: <a id="ics-link" href="#" target="_blank" rel="noopener"></a></p>
+
+            <details class="advanced">
+              <summary>Pojedyncze frakcje (zaawansowane)</summary>
+              <ul id="fraction-feeds" class="feed-list"></ul>
+            </details>
+          </aside>
+        </div>
+
+        <h3>Pełny harmonogram</h3>
+        <div class="table-wrap">
+          <table id="schedule-table"></table>
+        </div>
+
+        <p class="muted small">
+          Źródło: harmonogram wywozu odpadów gminy Czerwonak.
+          <a id="source-link" href="#" target="_blank" rel="noopener">Zobacz oryginalne PDF-y</a>.
+          Odpady wystawkowe i mycie pojemników realizowane są zgodnie z regulaminem gminy.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Projekt nieoficjalny. Dane na podstawie harmonogramów publikowanych przez Gminę Czerwonak.
+          W razie wątpliwości sprawdź
+          <a href="https://czerwonak.pl/pl/mieszkaniec/informacje/aktualnosci/harmonogram-wywozu-odpadow-na-rok-2026/9588" target="_blank" rel="noopener">czerwonak.pl</a>.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

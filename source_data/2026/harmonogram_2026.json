@@ -1,0 +1,1679 @@
+[
+  {
+    "file": "rejon1.pdf",
+    "rejon": 1,
+    "typ_zabudowy": "Zamieszkanych jednorodzinnych",
+    "lokalizacje": "Kicin: Berberysowa, Bratkowa, Cyprysowa, Daglezjowa, Działkowa, Fiołkowa, Jałowcowa, Lawendowa, Liliowa, Nagietkowa, Nowe osiedle, Pod Lasem, Poznańska (nieparzyste), Prosta, Radosna, Różana, Rzemieślnicza, Słonecznikowa, Sosnowa, Spokojna, Strumykowa, Sucha, Szkolna, Tulipanowa, Wichrowa, Widok, Wodna",
+    "numer_kontaktowy": "607 414 414",
+    "miesiace": {
+      "Styczeń": {
+        "zmieszane": "08,22",
+        "papier": "07,20",
+        "metale_i_tworzywa": "07,20",
+        "szklo": "07",
+        "bioodpady": "02,15,29",
+        "bioodpady_drzewka_swiateczne": "29",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Luty": {
+        "zmieszane": "05,19",
+        "papier": "03,17",
+        "metale_i_tworzywa": "03,17",
+        "szklo": "03",
+        "bioodpady": "12,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Marzec": {
+        "zmieszane": "05,19",
+        "papier": "03,17,31",
+        "metale_i_tworzywa": "03,17,31",
+        "szklo": "03,31",
+        "bioodpady": "12,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "27",
+        "mycie_pojemnikow": ""
+      },
+      "Kwiecień": {
+        "zmieszane": "02,16,30",
+        "papier": "14,28",
+        "metale_i_tworzywa": "14,28",
+        "szklo": "28",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Maj": {
+        "zmieszane": "14,28",
+        "papier": "12,26",
+        "metale_i_tworzywa": "12,26",
+        "szklo": "26",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": "√"
+      },
+      "Czerwiec": {
+        "zmieszane": "11,25",
+        "papier": "09,23",
+        "metale_i_tworzywa": "09,23",
+        "szklo": "23",
+        "bioodpady": "03,11,18,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Lipiec": {
+        "zmieszane": "09,23",
+        "papier": "07,21",
+        "metale_i_tworzywa": "07,21",
+        "szklo": "21",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Sierpień": {
+        "zmieszane": "06,20",
+        "papier": "04,18",
+        "metale_i_tworzywa": "04,18",
+        "szklo": "18",
+        "bioodpady": "06,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Wrzesień": {
+        "zmieszane": "03,17",
+        "papier": "01,15,29",
+        "metale_i_tworzywa": "01,15,29",
+        "szklo": "15",
+        "bioodpady": "03,10,17,24",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Październik": {
+        "zmieszane": "01,15,29",
+        "papier": "13,27",
+        "metale_i_tworzywa": "13,27",
+        "szklo": "13",
+        "bioodpady": "01,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Listopad": {
+        "zmieszane": "12,26",
+        "papier": "10,24",
+        "metale_i_tworzywa": "10,24",
+        "szklo": "10",
+        "bioodpady": "05,12,19,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "25",
+        "mycie_pojemnikow": ""
+      },
+      "Grudzień": {
+        "zmieszane": "10,22,23",
+        "papier": "08,22",
+        "metale_i_tworzywa": "08,22",
+        "szklo": "08",
+        "bioodpady": "03,17,31",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      }
+    }
+  },
+  {
+    "file": "rejon2.pdf",
+    "rejon": 2,
+    "typ_zabudowy": "Zamieszkanych jednorodzinnych",
+    "lokalizacje": "Kicin: Chabrowa, Fabryczna, Gwarna, Jonschera, Kłosowa, Kościelna, ks. Ludwika Hassego, Łanowa, Makowa, Okrężna, Poznańska (parzyste), Rolna, Rumiankowa, Swarzędzka, św. Jakuba, Uprawna, Wiejska, Wrzosowa, Zacisze, Zakątek, Zbożowa, Żniwna",
+    "numer_kontaktowy": "607 414 414",
+    "miesiace": {
+      "Styczeń": {
+        "zmieszane": "08,22",
+        "papier": "07,20,21",
+        "metale_i_tworzywa": "07,20",
+        "szklo": "07",
+        "bioodpady": "15,29",
+        "bioodpady_drzewka_swiateczne": "29",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Luty": {
+        "zmieszane": "05,19",
+        "papier": "03,17",
+        "metale_i_tworzywa": "03,17",
+        "szklo": "03",
+        "bioodpady": "12,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Marzec": {
+        "zmieszane": "05,19",
+        "papier": "03,17,31",
+        "metale_i_tworzywa": "03,17,31",
+        "szklo": "03,31",
+        "bioodpady": "12,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "19",
+        "mycie_pojemnikow": ""
+      },
+      "Kwiecień": {
+        "zmieszane": "02,16,30",
+        "papier": "14,28",
+        "metale_i_tworzywa": "14,28",
+        "szklo": "28",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Maj": {
+        "zmieszane": "14,28",
+        "papier": "12,26",
+        "metale_i_tworzywa": "12,26",
+        "szklo": "26",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": "√"
+      },
+      "Czerwiec": {
+        "zmieszane": "11,25",
+        "papier": "09,23",
+        "metale_i_tworzywa": "09,23",
+        "szklo": "23",
+        "bioodpady": "03,11,18,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Lipiec": {
+        "zmieszane": "09,23",
+        "papier": "07,21",
+        "metale_i_tworzywa": "07,21",
+        "szklo": "21",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Sierpień": {
+        "zmieszane": "06,20",
+        "papier": "04,18",
+        "metale_i_tworzywa": "04,18",
+        "szklo": "18",
+        "bioodpady": "06,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Wrzesień": {
+        "zmieszane": "03,17",
+        "papier": "01,15,29",
+        "metale_i_tworzywa": "01,15,29",
+        "szklo": "15",
+        "bioodpady": "03,10,17,24",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "16",
+        "mycie_pojemnikow": ""
+      },
+      "Październik": {
+        "zmieszane": "01,15,29",
+        "papier": "13,27",
+        "metale_i_tworzywa": "13,27",
+        "szklo": "13",
+        "bioodpady": "01,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Listopad": {
+        "zmieszane": "12,26",
+        "papier": "10,24",
+        "metale_i_tworzywa": "10,24",
+        "szklo": "10",
+        "bioodpady": "05,12,19,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Grudzień": {
+        "zmieszane": "10,22,23",
+        "papier": "08,22",
+        "metale_i_tworzywa": "08,22",
+        "szklo": "08",
+        "bioodpady": "03,17,31",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      }
+    }
+  },
+  {
+    "file": "rejon3.pdf",
+    "rejon": 3,
+    "typ_zabudowy": "Zamieszkanych jednorodzinnych",
+    "lokalizacje": "Annowo (wszystkie ulice), Owińska (wszystkie ulice)",
+    "numer_kontaktowy": "607 414 414",
+    "miesiace": {
+      "Styczeń": {
+        "zmieszane": "13,27",
+        "papier": "13,27",
+        "metale_i_tworzywa": "13,27",
+        "szklo": "13",
+        "bioodpady": "05,20",
+        "bioodpady_drzewka_swiateczne": "20",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Luty": {
+        "zmieszane": "10,24",
+        "papier": "10,24",
+        "metale_i_tworzywa": "10,24",
+        "szklo": "10",
+        "bioodpady": "03,17",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Marzec": {
+        "zmieszane": "10,24",
+        "papier": "10,24",
+        "metale_i_tworzywa": "10,24",
+        "szklo": "10",
+        "bioodpady": "03,17,31",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "04",
+        "mycie_pojemnikow": ""
+      },
+      "Kwiecień": {
+        "zmieszane": "07,21",
+        "papier": "07,21",
+        "metale_i_tworzywa": "07,21",
+        "szklo": "07",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Maj": {
+        "zmieszane": "05,19",
+        "papier": "05,19",
+        "metale_i_tworzywa": "05,19",
+        "szklo": "05",
+        "bioodpady": "05,12,19,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Czerwiec": {
+        "zmieszane": "02,16,30",
+        "papier": "02,16,30",
+        "metale_i_tworzywa": "02,16,30",
+        "szklo": "02,30",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Lipiec": {
+        "zmieszane": "14,28",
+        "papier": "14,28",
+        "metale_i_tworzywa": "14,28",
+        "szklo": "28",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Sierpień": {
+        "zmieszane": "11,25",
+        "papier": "11,25",
+        "metale_i_tworzywa": "11,25",
+        "szklo": "25",
+        "bioodpady": "04,11,18,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Wrzesień": {
+        "zmieszane": "08,22",
+        "papier": "08,22",
+        "metale_i_tworzywa": "08,22",
+        "szklo": "22",
+        "bioodpady": "01,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "02",
+        "mycie_pojemnikow": ""
+      },
+      "Październik": {
+        "zmieszane": "06,20",
+        "papier": "06,20",
+        "metale_i_tworzywa": "06,20",
+        "szklo": "20",
+        "bioodpady": "06,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Listopad": {
+        "zmieszane": "03,17",
+        "papier": "03,17",
+        "metale_i_tworzywa": "03,17",
+        "szklo": "17",
+        "bioodpady": "03,10,17,24",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Grudzień": {
+        "zmieszane": "01,15,29",
+        "papier": "01,15,29",
+        "metale_i_tworzywa": "01,15,29",
+        "szklo": "15",
+        "bioodpady": "08,22",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      }
+    }
+  },
+  {
+    "file": "rejon4.pdf",
+    "rejon": 4,
+    "typ_zabudowy": "Zamieszkanych jednorodzinnych",
+    "lokalizacje": "Bolechówko (wszystkie ulice), Potasze (wszystkie ulice), Trzaskowo (wszystkie ulice)",
+    "numer_kontaktowy": "607 414 414",
+    "miesiace": {
+      "Styczeń": {
+        "zmieszane": "02,16,30",
+        "papier": "02,16,30",
+        "metale_i_tworzywa": "02,16,30",
+        "szklo": "16",
+        "bioodpady": "08,13,27",
+        "bioodpady_drzewka_swiateczne": "27",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Luty": {
+        "zmieszane": "13,27",
+        "papier": "13,27",
+        "metale_i_tworzywa": "13,27",
+        "szklo": "13",
+        "bioodpady": "10,24",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Marzec": {
+        "zmieszane": "13,27",
+        "papier": "13,27",
+        "metale_i_tworzywa": "13,27",
+        "szklo": "13",
+        "bioodpady": "10,24",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "06",
+        "mycie_pojemnikow": ""
+      },
+      "Kwiecień": {
+        "zmieszane": "10,24",
+        "papier": "10,24",
+        "metale_i_tworzywa": "10,24",
+        "szklo": "10",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Maj": {
+        "zmieszane": "08,22",
+        "papier": "08,22",
+        "metale_i_tworzywa": "08,22",
+        "szklo": "08",
+        "bioodpady": "05,12,19,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Czerwiec": {
+        "zmieszane": "05,19",
+        "papier": "05,19",
+        "metale_i_tworzywa": "05,19",
+        "szklo": "05",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Lipiec": {
+        "zmieszane": "03,17,31",
+        "papier": "03,17,31",
+        "metale_i_tworzywa": "03,17,31",
+        "szklo": "03,31",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Sierpień": {
+        "zmieszane": "14,28",
+        "papier": "14,28",
+        "metale_i_tworzywa": "14,28",
+        "szklo": "28",
+        "bioodpady": "04,11,18,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Wrzesień": {
+        "zmieszane": "11,25",
+        "papier": "11,25",
+        "metale_i_tworzywa": "11,25",
+        "szklo": "25",
+        "bioodpady": "01,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "04",
+        "mycie_pojemnikow": ""
+      },
+      "Październik": {
+        "zmieszane": "09,23",
+        "papier": "09,23",
+        "metale_i_tworzywa": "09,23",
+        "szklo": "23",
+        "bioodpady": "06,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Listopad": {
+        "zmieszane": "06,20",
+        "papier": "06,20",
+        "metale_i_tworzywa": "06,20",
+        "szklo": "20",
+        "bioodpady": "03,10,17,24",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Grudzień": {
+        "zmieszane": "04,18",
+        "papier": "04,18",
+        "metale_i_tworzywa": "04,18",
+        "szklo": "18",
+        "bioodpady": "01,15,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      }
+    }
+  },
+  {
+    "file": "rejon5.pdf",
+    "rejon": 5,
+    "typ_zabudowy": "Zamieszkanych jednorodzinnych",
+    "lokalizacje": "Bolechowo (wszystkie ulice),Bolechowo-Osiedle (wszystkie ulice)",
+    "numer_kontaktowy": "607 414 414",
+    "miesiace": {
+      "Styczeń": {
+        "zmieszane": "05,19",
+        "papier": "12,26",
+        "metale_i_tworzywa": "12,26",
+        "szklo": "12",
+        "bioodpady": "02,16,30",
+        "bioodpady_drzewka_swiateczne": "30",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Luty": {
+        "zmieszane": "02,16",
+        "papier": "09,23",
+        "metale_i_tworzywa": "09,23",
+        "szklo": "09",
+        "bioodpady": "13,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Marzec": {
+        "zmieszane": "02,16,30",
+        "papier": "09,23",
+        "metale_i_tworzywa": "09,23",
+        "szklo": "09",
+        "bioodpady": "13,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "11",
+        "mycie_pojemnikow": ""
+      },
+      "Kwiecień": {
+        "zmieszane": "13,27",
+        "papier": "03,20",
+        "metale_i_tworzywa": "3,20",
+        "szklo": "07",
+        "bioodpady": "03,10,17,24",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Maj": {
+        "zmieszane": "11,25",
+        "papier": "04,18",
+        "metale_i_tworzywa": "04,18",
+        "szklo": "04",
+        "bioodpady": "04,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": "√"
+      },
+      "Czerwiec": {
+        "zmieszane": "08,22",
+        "papier": "01,15,29",
+        "metale_i_tworzywa": "01,15,29",
+        "szklo": "01,29",
+        "bioodpady": "05,12,19,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Lipiec": {
+        "zmieszane": "06,20",
+        "papier": "13,27",
+        "metale_i_tworzywa": "13,27",
+        "szklo": "27",
+        "bioodpady": "03,10,17,24,31",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Sierpień": {
+        "zmieszane": "03,17,31",
+        "papier": "10,24",
+        "metale_i_tworzywa": "10,24",
+        "szklo": "24",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Wrzesień": {
+        "zmieszane": "14,28",
+        "papier": "07,21",
+        "metale_i_tworzywa": "07,21",
+        "szklo": "21",
+        "bioodpady": "04,11,18,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "09",
+        "mycie_pojemnikow": ""
+      },
+      "Październik": {
+        "zmieszane": "12,26",
+        "papier": "05,19",
+        "metale_i_tworzywa": "05,19",
+        "szklo": "19",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Listopad": {
+        "zmieszane": "09,23",
+        "papier": "02,16,30",
+        "metale_i_tworzywa": "02,16,30",
+        "szklo": "16",
+        "bioodpady": "06,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Grudzień": {
+        "zmieszane": "07,21",
+        "papier": "14,28",
+        "metale_i_tworzywa": "14,28",
+        "szklo": "14",
+        "bioodpady": "04,18",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      }
+    }
+  },
+  {
+    "file": "rejon6.pdf",
+    "rejon": 6,
+    "typ_zabudowy": "Zamieszkanych jednorodzinnych",
+    "lokalizacje": "Szlachęcin, Promnice (wszystkie ulice)",
+    "numer_kontaktowy": "607 414 414",
+    "miesiace": {
+      "Styczeń": {
+        "zmieszane": "07,21",
+        "papier": "09,23",
+        "metale_i_tworzywa": "09,23",
+        "szklo": "09",
+        "bioodpady": "09,23",
+        "bioodpady_drzewka_swiateczne": "23",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Luty": {
+        "zmieszane": "04,18",
+        "papier": "06,20",
+        "metale_i_tworzywa": "06,20",
+        "szklo": "06",
+        "bioodpady": "06,20",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Marzec": {
+        "zmieszane": "04,18",
+        "papier": "06,20",
+        "metale_i_tworzywa": "06,20",
+        "szklo": "06",
+        "bioodpady": "06,20",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "12",
+        "mycie_pojemnikow": ""
+      },
+      "Kwiecień": {
+        "zmieszane": "01,15,29",
+        "papier": "03,17,30",
+        "metale_i_tworzywa": "03,17,30",
+        "szklo": "03",
+        "bioodpady": "03,10,17,24",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": "√"
+      },
+      "Maj": {
+        "zmieszane": "13,27",
+        "papier": "15,29",
+        "metale_i_tworzywa": "15,29",
+        "szklo": "04,29",
+        "bioodpady": "04,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Czerwiec": {
+        "zmieszane": "10,24",
+        "papier": "12,26",
+        "metale_i_tworzywa": "12,26",
+        "szklo": "26",
+        "bioodpady": "05,12,19,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Lipiec": {
+        "zmieszane": "08,22",
+        "papier": "10,24",
+        "metale_i_tworzywa": "10,24",
+        "szklo": "24",
+        "bioodpady": "03,10,17,24,31",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Sierpień": {
+        "zmieszane": "05,19",
+        "papier": "07,21",
+        "metale_i_tworzywa": "07,21",
+        "szklo": "21",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Wrzesień": {
+        "zmieszane": "02,16,30",
+        "papier": "04,18",
+        "metale_i_tworzywa": "04,18",
+        "szklo": "18",
+        "bioodpady": "04,11,18,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "11",
+        "mycie_pojemnikow": ""
+      },
+      "Październik": {
+        "zmieszane": "14,28",
+        "papier": "02,16,30",
+        "metale_i_tworzywa": "02,16,30",
+        "szklo": "16",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Listopad": {
+        "zmieszane": "10,25",
+        "papier": "13,27",
+        "metale_i_tworzywa": "13,27",
+        "szklo": "13",
+        "bioodpady": "06,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Grudzień": {
+        "zmieszane": "09,23",
+        "papier": "11,22",
+        "metale_i_tworzywa": "11,22",
+        "szklo": "11",
+        "bioodpady": "11,22",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      }
+    }
+  },
+  {
+    "file": "rejon7.pdf",
+    "rejon": 7,
+    "typ_zabudowy": "Zamieszkanych jednorodzinnych",
+    "lokalizacje": "Czerwonak: Dojazd, Jagodowa, Jeżynowa, Kręta, Krótka, Nowa, Okrężna, Malinowa, Morenowa, Nowa, Plac Zielony, Pogodna, Poziomkowa, Słoneczna, Stawna, Stroma",
+    "numer_kontaktowy": "607 414 414",
+    "miesiace": {
+      "Styczeń": {
+        "zmieszane": "07,21",
+        "papier": "05,19",
+        "metale_i_tworzywa": "05,19",
+        "szklo": "05",
+        "bioodpady": "05,19",
+        "bioodpady_drzewka_swiateczne": "20",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Luty": {
+        "zmieszane": "04,18",
+        "papier": "02,16",
+        "metale_i_tworzywa": "02,16",
+        "szklo": "02",
+        "bioodpady": "02,16",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Marzec": {
+        "zmieszane": "04,18",
+        "papier": "02,16,30",
+        "metale_i_tworzywa": "02,16,30",
+        "szklo": "02,30",
+        "bioodpady": "02,16,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "17",
+        "mycie_pojemnikow": ""
+      },
+      "Kwiecień": {
+        "zmieszane": "01,15,29",
+        "papier": "13,27",
+        "metale_i_tworzywa": "13,27",
+        "szklo": "27",
+        "bioodpady": "07,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Maj": {
+        "zmieszane": "13,27",
+        "papier": "11,25",
+        "metale_i_tworzywa": "11,25",
+        "szklo": "25",
+        "bioodpady": "04,11,18,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Czerwiec": {
+        "zmieszane": "10,24",
+        "papier": "08,22",
+        "metale_i_tworzywa": "08,22",
+        "szklo": "22",
+        "bioodpady": "01,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Lipiec": {
+        "zmieszane": "08,22",
+        "papier": "06,20",
+        "metale_i_tworzywa": "06,20",
+        "szklo": "20",
+        "bioodpady": "06,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Sierpień": {
+        "zmieszane": "05,19",
+        "papier": "03,17,31",
+        "metale_i_tworzywa": "03,17,31",
+        "szklo": "17",
+        "bioodpady": "03,10,17,24,31",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Wrzesień": {
+        "zmieszane": "02,16,30",
+        "papier": "14,28",
+        "metale_i_tworzywa": "14,28",
+        "szklo": "14",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Październik": {
+        "zmieszane": "14,28",
+        "papier": "12,26",
+        "metale_i_tworzywa": "12,26",
+        "szklo": "12",
+        "bioodpady": "05,12,19,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "14",
+        "mycie_pojemnikow": ""
+      },
+      "Listopad": {
+        "zmieszane": "10,25",
+        "papier": "09,23",
+        "metale_i_tworzywa": "09,23",
+        "szklo": "09",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Grudzień": {
+        "zmieszane": "09,23",
+        "papier": "07,21",
+        "metale_i_tworzywa": "07,21",
+        "szklo": "07",
+        "bioodpady": "07,21",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      }
+    }
+  },
+  {
+    "file": "rejon8.pdf",
+    "rejon": 8,
+    "typ_zabudowy": "Zamieszkanych jednorodzinnych",
+    "lokalizacje": "Czerwonak: Dolna, Działkowa, Dziewicza Góra, Grzybowa, Konwaliowa, Kościelna, Leśna, Letnia, Łąkowa, Piaskowa, Podgórna, Południowa, Poprzeczna, Rolna, Sosnowa, Spokojna, Sucha, Szyszkowa, Świerkowa, Tęczowa, Wiosenna, Wrzosowa, Wschodnia, Zachodnia, Zielona, Źródlana (do nr 73)",
+    "numer_kontaktowy": "607 414 414",
+    "miesiace": {
+      "Styczeń": {
+        "zmieszane": "02,15,29",
+        "papier": "05,19",
+        "metale_i_tworzywa": "05,19",
+        "szklo": "05",
+        "bioodpady": "05,19",
+        "bioodpady_drzewka_swiateczne": "20",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Luty": {
+        "zmieszane": "12,26",
+        "papier": "02,16",
+        "metale_i_tworzywa": "02,16",
+        "szklo": "02",
+        "bioodpady": "02,16",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Marzec": {
+        "zmieszane": "12,26",
+        "papier": "02,16,30",
+        "metale_i_tworzywa": "02,16,30",
+        "szklo": "02,30",
+        "bioodpady": "02,16,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "18",
+        "mycie_pojemnikow": ""
+      },
+      "Kwiecień": {
+        "zmieszane": "09,23",
+        "papier": "13,27",
+        "metale_i_tworzywa": "13,27",
+        "szklo": "27",
+        "bioodpady": "07,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Maj": {
+        "zmieszane": "07,21",
+        "papier": "11,25",
+        "metale_i_tworzywa": "11,25",
+        "szklo": "25",
+        "bioodpady": "04,11,18,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": "√"
+      },
+      "Czerwiec": {
+        "zmieszane": "05,18",
+        "papier": "08,22",
+        "metale_i_tworzywa": "08,22",
+        "szklo": "22",
+        "bioodpady": "01,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Lipiec": {
+        "zmieszane": "02,16,30",
+        "papier": "06,20",
+        "metale_i_tworzywa": "06,20",
+        "szklo": "20",
+        "bioodpady": "06,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Sierpień": {
+        "zmieszane": "13,27",
+        "papier": "03,17,31",
+        "metale_i_tworzywa": "03,17,31",
+        "szklo": "17",
+        "bioodpady": "03,10,17,24,31",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Wrzesień": {
+        "zmieszane": "10,24",
+        "papier": "14,28",
+        "metale_i_tworzywa": "14,28",
+        "szklo": "14",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Październik": {
+        "zmieszane": "08,22",
+        "papier": "12,26",
+        "metale_i_tworzywa": "12,26",
+        "szklo": "12",
+        "bioodpady": "05,12,19,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "21",
+        "mycie_pojemnikow": ""
+      },
+      "Listopad": {
+        "zmieszane": "05,19",
+        "papier": "09,23",
+        "metale_i_tworzywa": "09,23",
+        "szklo": "09",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Grudzień": {
+        "zmieszane": "03,17,31",
+        "papier": "07,21",
+        "metale_i_tworzywa": "07,21",
+        "szklo": "07",
+        "bioodpady": "07,21",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      }
+    }
+  },
+  {
+    "file": "rejon9.pdf",
+    "rejon": 9,
+    "typ_zabudowy": "Zamieszkanych jednorodzinnych",
+    "lokalizacje": "Czerwonak: Akacjowa, Błękitna, Bolesława Chrobrego, Brzozowa, Bukowa, Dąbrówki, Dębowa, Gajowa, Jana III Sobieskiego, Jesionowa, Kasztanowa, Kazimierza Wielkiego, Klonowa, Lazurowa, Lecha, Makowa, Marysieńki, Mieszka I, Polna, Przemysła II, św. Jadwigi, św, Wojciecha, Władysława Jagiełły, Władysława Łokietka Zacisze, Zagórze, Zakątek, Zalesie, Zdroje, Źródlana (od nr 74), Żurawia",
+    "numer_kontaktowy": "607 414 414",
+    "miesiace": {
+      "Styczeń": {
+        "zmieszane": "14,28",
+        "papier": "05,15,29",
+        "metale_i_tworzywa": "02,15,29",
+        "szklo": "07,29",
+        "bioodpady": "05,19",
+        "bioodpady_drzewka_swiateczne": "27",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Luty": {
+        "zmieszane": "11,25",
+        "papier": "12,26",
+        "metale_i_tworzywa": "12,26",
+        "szklo": "26",
+        "bioodpady": "02,16",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Marzec": {
+        "zmieszane": "11,25",
+        "papier": "12,26",
+        "metale_i_tworzywa": "12,26",
+        "szklo": "26",
+        "bioodpady": "02,16,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "13",
+        "mycie_pojemnikow": ""
+      },
+      "Kwiecień": {
+        "zmieszane": "03,08,22",
+        "papier": "09,23",
+        "metale_i_tworzywa": "09,23",
+        "szklo": "23",
+        "bioodpady": "08,13,22,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Maj": {
+        "zmieszane": "06,20",
+        "papier": "07,21",
+        "metale_i_tworzywa": "07,21",
+        "szklo": "21",
+        "bioodpady": "06,11,20,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": "√"
+      },
+      "Czerwiec": {
+        "zmieszane": "03,17",
+        "papier": "05,18",
+        "metale_i_tworzywa": "05,18",
+        "szklo": "18",
+        "bioodpady": "03,08,17,22",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Lipiec": {
+        "zmieszane": "01,15,29",
+        "papier": "02,16,30",
+        "metale_i_tworzywa": "02,16,30",
+        "szklo": "16",
+        "bioodpady": "01,06,15,20,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Sierpień": {
+        "zmieszane": "12,26",
+        "papier": "13,27",
+        "metale_i_tworzywa": "13,27",
+        "szklo": "13",
+        "bioodpady": "03,12,17,26,31",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Wrzesień": {
+        "zmieszane": "09,23",
+        "papier": "10,24",
+        "metale_i_tworzywa": "10,24",
+        "szklo": "10",
+        "bioodpady": "09,14,23,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Październik": {
+        "zmieszane": "07,21",
+        "papier": "08,22",
+        "metale_i_tworzywa": "08,22",
+        "szklo": "08",
+        "bioodpady": "07,12,21,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "27",
+        "mycie_pojemnikow": ""
+      },
+      "Listopad": {
+        "zmieszane": "04,18",
+        "papier": "05,19",
+        "metale_i_tworzywa": "05,19",
+        "szklo": "05",
+        "bioodpady": "04,09,18,23",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Grudzień": {
+        "zmieszane": "02,16,30",
+        "papier": "03,17,31",
+        "metale_i_tworzywa": "03,17,31",
+        "szklo": "03,31",
+        "bioodpady": "07,21",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      }
+    }
+  },
+  {
+    "file": "rejon10.pdf",
+    "rejon": 10,
+    "typ_zabudowy": "Zamieszkanych jednorodzinnych",
+    "lokalizacje": "Czerwonak: Gdyńska, Portowa, Szkolna",
+    "numer_kontaktowy": "607 414 414",
+    "miesiace": {
+      "Styczeń": {
+        "zmieszane": "12,26",
+        "papier": "08,22",
+        "metale_i_tworzywa": "08,22",
+        "szklo": "08",
+        "bioodpady": "07,21",
+        "bioodpady_drzewka_swiateczne": "22",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Luty": {
+        "zmieszane": "09,23",
+        "papier": "05,19",
+        "metale_i_tworzywa": "05,19",
+        "szklo": "05",
+        "bioodpady": "04,18",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Marzec": {
+        "zmieszane": "09,23",
+        "papier": "05,19",
+        "metale_i_tworzywa": "05,19",
+        "szklo": "05",
+        "bioodpady": "04,18",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "23",
+        "mycie_pojemnikow": ""
+      },
+      "Kwiecień": {
+        "zmieszane": "03,20",
+        "papier": "02,16,30",
+        "metale_i_tworzywa": "02,16,30",
+        "szklo": "02,30",
+        "bioodpady": "01,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Maj": {
+        "zmieszane": "04,18",
+        "papier": "14,28",
+        "metale_i_tworzywa": "14,28",
+        "szklo": "28",
+        "bioodpady": "06,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": "√"
+      },
+      "Czerwiec": {
+        "zmieszane": "01,15,29",
+        "papier": "11,25",
+        "metale_i_tworzywa": "11,25",
+        "szklo": "25",
+        "bioodpady": "03,10,17,24",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Lipiec": {
+        "zmieszane": "13,27",
+        "papier": "09,23",
+        "metale_i_tworzywa": "09,23",
+        "szklo": "23",
+        "bioodpady": "01,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Sierpień": {
+        "zmieszane": "10,24",
+        "papier": "06,20",
+        "metale_i_tworzywa": "06,20",
+        "szklo": "20",
+        "bioodpady": "05,12,19,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Wrzesień": {
+        "zmieszane": "07,21",
+        "papier": "03,17",
+        "metale_i_tworzywa": "03,17",
+        "szklo": "17",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Październik": {
+        "zmieszane": "05,19",
+        "papier": "01,15,29",
+        "metale_i_tworzywa": "01,15,29",
+        "szklo": "15",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "28",
+        "mycie_pojemnikow": ""
+      },
+      "Listopad": {
+        "zmieszane": "02,16,30",
+        "papier": "12,26",
+        "metale_i_tworzywa": "12,26",
+        "szklo": "12",
+        "bioodpady": "04,10,18,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Grudzień": {
+        "zmieszane": "14,28",
+        "papier": "10,23",
+        "metale_i_tworzywa": "10,23",
+        "szklo": "10",
+        "bioodpady": "09,23",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      }
+    }
+  },
+  {
+    "file": "rejon11.pdf",
+    "rejon": 11,
+    "typ_zabudowy": "Zamieszkanych jednorodzinnych",
+    "lokalizacje": "Dębogóra (wszystkie ulice), Kliny (wszystkie ulice), Ludwikowo, Mielno (wszystkie ulice)",
+    "numer_kontaktowy": "607 414 414",
+    "miesiace": {
+      "Styczeń": {
+        "zmieszane": "09,23",
+        "papier": "08,22",
+        "metale_i_tworzywa": "08,22",
+        "szklo": "08",
+        "bioodpady": "08,22",
+        "bioodpady_drzewka_swiateczne": "22",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Luty": {
+        "zmieszane": "06,20",
+        "papier": "05,19",
+        "metale_i_tworzywa": "05,19",
+        "szklo": "05",
+        "bioodpady": "05,19",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Marzec": {
+        "zmieszane": "06,20",
+        "papier": "05,19",
+        "metale_i_tworzywa": "05,19",
+        "szklo": "05",
+        "bioodpady": "05,19",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "16",
+        "mycie_pojemnikow": ""
+      },
+      "Kwiecień": {
+        "zmieszane": "03,17",
+        "papier": "02,16,30",
+        "metale_i_tworzywa": "02,16,30",
+        "szklo": "02,30",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Maj": {
+        "zmieszane": "04,15,29",
+        "papier": "14,28",
+        "metale_i_tworzywa": "14,28",
+        "szklo": "28",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": "√"
+      },
+      "Czerwiec": {
+        "zmieszane": "12,26",
+        "papier": "11,25",
+        "metale_i_tworzywa": "11,25",
+        "szklo": "25",
+        "bioodpady": "03,11,18,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Lipiec": {
+        "zmieszane": "10,24",
+        "papier": "09,23",
+        "metale_i_tworzywa": "09,23",
+        "szklo": "23",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Sierpień": {
+        "zmieszane": "07,21",
+        "papier": "06,20",
+        "metale_i_tworzywa": "06,20",
+        "szklo": "20",
+        "bioodpady": "06,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Wrzesień": {
+        "zmieszane": "04,18",
+        "papier": "03,17",
+        "metale_i_tworzywa": "03,17",
+        "szklo": "17",
+        "bioodpady": "03,10,17,24",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Październik": {
+        "zmieszane": "02,16,30",
+        "papier": "01,15,29",
+        "metale_i_tworzywa": "01,15,29",
+        "szklo": "15",
+        "bioodpady": "01,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "07",
+        "mycie_pojemnikow": ""
+      },
+      "Listopad": {
+        "zmieszane": "13,27",
+        "papier": "12,26",
+        "metale_i_tworzywa": "12,26",
+        "szklo": "12",
+        "bioodpady": "05,12,19,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Grudzień": {
+        "zmieszane": "11,22",
+        "papier": "10,23",
+        "metale_i_tworzywa": "10,23",
+        "szklo": "10",
+        "bioodpady": "10,23",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      }
+    }
+  },
+  {
+    "file": "rejon12.pdf",
+    "rejon": 12,
+    "typ_zabudowy": "Zamieszkanych jednorodzinnych",
+    "lokalizacje": "Koziegłowy (wszystkie ulice)",
+    "numer_kontaktowy": "607 414 414",
+    "miesiace": {
+      "Styczeń": {
+        "zmieszane": "02,16,30",
+        "papier": "13,27",
+        "metale_i_tworzywa": "13,27",
+        "szklo": "13",
+        "bioodpady": "14,28",
+        "bioodpady_drzewka_swiateczne": "29",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Luty": {
+        "zmieszane": "13,27",
+        "papier": "10,24",
+        "metale_i_tworzywa": "10,24",
+        "szklo": "10",
+        "bioodpady": "11,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Marzec": {
+        "zmieszane": "13,27",
+        "papier": "10,24",
+        "metale_i_tworzywa": "10,24",
+        "szklo": "10",
+        "bioodpady": "11,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "25",
+        "mycie_pojemnikow": ""
+      },
+      "Kwiecień": {
+        "zmieszane": "10,24",
+        "papier": "03,07,21",
+        "metale_i_tworzywa": "07,21",
+        "szklo": "07",
+        "bioodpady": "01,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": "√"
+      },
+      "Maj": {
+        "zmieszane": "08,22",
+        "papier": "05,19",
+        "metale_i_tworzywa": "05,19",
+        "szklo": "05",
+        "bioodpady": "06,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Czerwiec": {
+        "zmieszane": "05,19",
+        "papier": "02,16,30",
+        "metale_i_tworzywa": "02,16,30",
+        "szklo": "02,30",
+        "bioodpady": "03,10,17,24",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Lipiec": {
+        "zmieszane": "03,17,31",
+        "papier": "14,28",
+        "metale_i_tworzywa": "14,28",
+        "szklo": "28",
+        "bioodpady": "01,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Sierpień": {
+        "zmieszane": "14,28",
+        "papier": "11,25",
+        "metale_i_tworzywa": "11,25",
+        "szklo": "25",
+        "bioodpady": "05,12,19,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Wrzesień": {
+        "zmieszane": "11,25",
+        "papier": "08,22",
+        "metale_i_tworzywa": "08,22",
+        "szklo": "22",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Październik": {
+        "zmieszane": "09,23",
+        "papier": "06,20",
+        "metale_i_tworzywa": "06,20",
+        "szklo": "20",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Listopad": {
+        "zmieszane": "06,20",
+        "papier": "03,17",
+        "metale_i_tworzywa": "03,17",
+        "szklo": "17",
+        "bioodpady": "04,10,18,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "18",
+        "mycie_pojemnikow": ""
+      },
+      "Grudzień": {
+        "zmieszane": "04,18",
+        "papier": "01,15,29",
+        "metale_i_tworzywa": "01,15,29",
+        "szklo": "15",
+        "bioodpady": "02,16,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      }
+    }
+  },
+  {
+    "file": "rejon13.pdf",
+    "rejon": 13,
+    "typ_zabudowy": "Zamieszkanych jednorodzinnych",
+    "lokalizacje": "Miękowo (wszystkie ulice)",
+    "numer_kontaktowy": "607 414 414",
+    "miesiace": {
+      "Styczeń": {
+        "zmieszane": "07,21",
+        "papier": "13,27",
+        "metale_i_tworzywa": "13,27",
+        "szklo": "13",
+        "bioodpady": "05,20",
+        "bioodpady_drzewka_swiateczne": "26",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Luty": {
+        "zmieszane": "04,18",
+        "papier": "10,24",
+        "metale_i_tworzywa": "10,24",
+        "szklo": "10",
+        "bioodpady": "03,17",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Marzec": {
+        "zmieszane": "04,18",
+        "papier": "10,24",
+        "metale_i_tworzywa": "10,24",
+        "szklo": "10",
+        "bioodpady": "03,17,31",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "17",
+        "mycie_pojemnikow": ""
+      },
+      "Kwiecień": {
+        "zmieszane": "01,15,29",
+        "papier": "07,21",
+        "metale_i_tworzywa": "07,21",
+        "szklo": "07",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Maj": {
+        "zmieszane": "13,27",
+        "papier": "05,19",
+        "metale_i_tworzywa": "05,19",
+        "szklo": "05",
+        "bioodpady": "05,12,19,26",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": "√"
+      },
+      "Czerwiec": {
+        "zmieszane": "10,24",
+        "papier": "02,16,30",
+        "metale_i_tworzywa": "02,16,30",
+        "szklo": "02,30",
+        "bioodpady": "02,09,16,23,30",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Lipiec": {
+        "zmieszane": "08,22",
+        "papier": "14,28",
+        "metale_i_tworzywa": "14,28",
+        "szklo": "28",
+        "bioodpady": "07,14,21,28",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Sierpień": {
+        "zmieszane": "05,19",
+        "papier": "11,25",
+        "metale_i_tworzywa": "11,25",
+        "szklo": "25",
+        "bioodpady": "04,11,18,25",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Wrzesień": {
+        "zmieszane": "02,16,30",
+        "papier": "08,22",
+        "metale_i_tworzywa": "08,22",
+        "szklo": "22",
+        "bioodpady": "01,08,15,22,29",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Październik": {
+        "zmieszane": "14,28",
+        "papier": "06,20",
+        "metale_i_tworzywa": "06,20",
+        "szklo": "20",
+        "bioodpady": "06,13,20,27",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "14",
+        "mycie_pojemnikow": ""
+      },
+      "Listopad": {
+        "zmieszane": "10,25",
+        "papier": "03,17",
+        "metale_i_tworzywa": "03,17",
+        "szklo": "17",
+        "bioodpady": "03,10,17,24",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      },
+      "Grudzień": {
+        "zmieszane": "09,23",
+        "papier": "01,15,29",
+        "metale_i_tworzywa": "01,15,29",
+        "szklo": "15",
+        "bioodpady": "08,22",
+        "bioodpady_drzewka_swiateczne": "",
+        "odpady_wystawkowe": "",
+        "mycie_pojemnikow": ""
+      }
+    }
+  }
+]

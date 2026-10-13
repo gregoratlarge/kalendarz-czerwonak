@@ -1,0 +1,11 @@
+{
+  "gmina": "Czerwonak",
+  "years": [
+    {
+      "rok": 2026,
+      "regions": "data/2026/regions.json",
+      "streets": "data/2026/streets.json",
+      "icsBase": "ics/2026"
+    }
+  ]
+}
