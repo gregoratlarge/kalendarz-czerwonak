@@ -283,8 +283,12 @@ function renderSubscribe(region: RegionData): void {
 
   el.icsLink.href = url;
   el.icsLink.textContent = url;
-  el.btnGoogle.href = `https://calendar.google.com/calendar/r?cid=${encodeURIComponent(url)}`;
-  el.btnWebcal.href = url.replace(/^https?:/, 'webcal:');
+  // Google's /render?cid= deep link is broken with an https:// value
+  // (issuetracker 442619500); the webcal:// form is the one that still works
+  // on the web. Apple/Outlook use the plain webcal:// scheme.
+  const webcalUrl = url.replace(/^https?:/, 'webcal:');
+  el.btnGoogle.href = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(webcalUrl)}`;
+  el.btnWebcal.href = webcalUrl;
   el.btnDownload.onclick = () => {
     if (!currentRegion) return;
     const events = buildWasteEvents(currentRegion, entry.rok, loaded!.regions.fractions, enabled);
