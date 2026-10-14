@@ -61,7 +61,6 @@
   "regions": [
     {
       "rejon": 1,
-      "typ": "Zamieszkanych jednorodzinnych",
       "lokalizacje": "Kicin: Berberysowa, Bratkowa, Cyprysowa, Daglezjowa, Działkowa, Fiołkowa, Jałowcowa, Lawendowa, Liliowa, Nagietkowa, Nowe osiedle, Pod Lasem, Poznańska (nieparzyste), Prosta, Radosna, Różana, Rzemieślnicza, Słonecznikowa, Sosnowa, Spokojna, Strumykowa, Sucha, Szkolna, Tulipanowa, Wichrowa, Widok, Wodna",
       "kontakt": "607 414 414",
       "schedule": {
@@ -387,7 +386,6 @@
     },
     {
       "rejon": 2,
-      "typ": "Zamieszkanych jednorodzinnych",
       "lokalizacje": "Kicin: Chabrowa, Fabryczna, Gwarna, Jonschera, Kłosowa, Kościelna, ks. Ludwika Hassego, Łanowa, Makowa, Okrężna, Poznańska (parzyste), Rolna, Rumiankowa, Swarzędzka, św. Jakuba, Uprawna, Wiejska, Wrzosowa, Zacisze, Zakątek, Zbożowa, Żniwna",
       "kontakt": "607 414 414",
       "schedule": {
@@ -713,7 +711,6 @@
     },
     {
       "rejon": 3,
-      "typ": "Zamieszkanych jednorodzinnych",
       "lokalizacje": "Annowo (wszystkie ulice), Owińska (wszystkie ulice)",
       "kontakt": "607 414 414",
       "schedule": {
@@ -1034,7 +1031,6 @@
     },
     {
       "rejon": 4,
-      "typ": "Zamieszkanych jednorodzinnych",
       "lokalizacje": "Bolechówko (wszystkie ulice), Potasze (wszystkie ulice), Trzaskowo (wszystkie ulice)",
       "kontakt": "607 414 414",
       "schedule": {
@@ -1356,7 +1352,6 @@
     },
     {
       "rejon": 5,
-      "typ": "Zamieszkanych jednorodzinnych",
       "lokalizacje": "Bolechowo (wszystkie ulice),Bolechowo-Osiedle (wszystkie ulice)",
       "kontakt": "607 414 414",
       "schedule": {
@@ -1680,7 +1675,6 @@
     },
     {
       "rejon": 6,
-      "typ": "Zamieszkanych jednorodzinnych",
       "lokalizacje": "Szlachęcin, Promnice (wszystkie ulice)",
       "kontakt": "607 414 414",
       "schedule": {
@@ -2003,7 +1997,6 @@
     },
     {
       "rejon": 7,
-      "typ": "Zamieszkanych jednorodzinnych",
       "lokalizacje": "Czerwonak: Dojazd, Jagodowa, Jeżynowa, Kręta, Krótka, Nowa, Okrężna, Malinowa, Morenowa, Nowa, Plac Zielony, Pogodna, Poziomkowa, Słoneczna, Stawna, Stroma",
       "kontakt": "607 414 414",
       "schedule": {
@@ -2325,7 +2318,6 @@
     },
     {
       "rejon": 8,
-      "typ": "Zamieszkanych jednorodzinnych",
       "lokalizacje": "Czerwonak: Dolna, Działkowa, Dziewicza Góra, Grzybowa, Konwaliowa, Kościelna, Leśna, Letnia, Łąkowa, Piaskowa, Podgórna, Południowa, Poprzeczna, Rolna, Sosnowa, Spokojna, Sucha, Szyszkowa, Świerkowa, Tęczowa, Wiosenna, Wrzosowa, Wschodnia, Zachodnia, Zielona, Źródlana (do nr 73)",
       "kontakt": "607 414 414",
       "schedule": {
@@ -2650,7 +2642,6 @@
     },
     {
       "rejon": 9,
-      "typ": "Zamieszkanych jednorodzinnych",
       "lokalizacje": "Czerwonak: Akacjowa, Błękitna, Bolesława Chrobrego, Brzozowa, Bukowa, Dąbrówki, Dębowa, Gajowa, Jana III Sobieskiego, Jesionowa, Kasztanowa, Kazimierza Wielkiego, Klonowa, Lazurowa, Lecha, Makowa, Marysieńki, Mieszka I, Polna, Przemysła II, św. Jadwigi, św, Wojciecha, Władysława Jagiełły, Władysława Łokietka Zacisze, Zagórze, Zakątek, Zalesie, Zdroje, Źródlana (od nr 74), Żurawia",
       "kontakt": "607 414 414",
       "schedule": {
@@ -2977,7 +2968,6 @@
     },
     {
       "rejon": 10,
-      "typ": "Zamieszkanych jednorodzinnych",
       "lokalizacje": "Czerwonak: Gdyńska, Portowa, Szkolna",
       "kontakt": "607 414 414",
       "schedule": {
@@ -3300,7 +3290,6 @@
     },
     {
       "rejon": 11,
-      "typ": "Zamieszkanych jednorodzinnych",
       "lokalizacje": "Dębogóra (wszystkie ulice), Kliny (wszystkie ulice), Ludwikowo, Mielno (wszystkie ulice)",
       "kontakt": "607 414 414",
       "schedule": {
@@ -3623,7 +3612,6 @@
     },
     {
       "rejon": 12,
-      "typ": "Zamieszkanych jednorodzinnych",
       "lokalizacje": "Koziegłowy (wszystkie ulice)",
       "kontakt": "607 414 414",
       "schedule": {
@@ -3948,7 +3936,6 @@
     },
     {
       "rejon": 13,
-      "typ": "Zamieszkanych jednorodzinnych",
       "lokalizacje": "Miękowo (wszystkie ulice)",
       "kontakt": "607 414 414",
       "schedule": {

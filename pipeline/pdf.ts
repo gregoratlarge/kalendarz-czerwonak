@@ -89,7 +89,6 @@ export async function parseRegionPdf(path: string, rejon: number): Promise<Regio
 
   // locality block sits between the "Rejon N ... rok" line and the "Daty odbioru" line
   const rejonLine = headerLines.find((l) => /Rejon\s*\d+/i.test(l)) ?? '';
-  const typ = rejonLine.replace(/Rejon.*$/i, '').replace(phone, '').replace(/\s+/g, ' ').trim();
   const idxRejon = headerLines.indexOf(rejonLine);
   const idxDaty = headerLines.findIndex((l) => /Daty odbioru/i.test(l));
   const lokalizacje = headerLines
@@ -106,5 +105,5 @@ export async function parseRegionPdf(path: string, rejon: number): Promise<Regio
     throw new Error(`${path}: no mixed-waste dates parsed`);
   }
 
-  return { rejon, typ, lokalizacje, kontakt, schedule, mycieMiesiace };
+  return { rejon, lokalizacje, kontakt, schedule, mycieMiesiace };
 }

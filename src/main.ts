@@ -37,7 +37,6 @@ const el = {
   numer: $<HTMLInputElement>('numer-input'),
   regionTitle: $('region-title'),
   regionMeta: $('region-meta'),
-  regionBadge: $('region-badge'),
   calendarNote: $('calendar-note'),
   fractions: $('fractions'),
   scheduleTable: $<HTMLTableElement>('schedule-table'),
@@ -188,7 +187,6 @@ function showResult(rejon: number, entry: StreetEntry | undefined, viaLocality: 
 
   el.regionTitle.textContent = `Rejon ${rejon}`;
   el.regionMeta.textContent = region.lokalizacje;
-  el.regionBadge.textContent = region.typ || 'harmonogram';
   el.calendarNote.hidden = true;
 
   renderFractionChips(region);

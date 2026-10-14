@@ -16,8 +16,6 @@ export interface Fraction {
 
 export interface RegionData {
   rejon: number;
-  /** housing type phrase from the PDF, e.g. "Zamieszkanych jednorodzinnych" */
-  typ: string;
   /** raw localities/streets description from the PDF header */
   lokalizacje: string;
   /** contractor phone number, if present */
