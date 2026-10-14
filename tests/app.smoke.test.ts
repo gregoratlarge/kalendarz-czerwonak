@@ -30,7 +30,9 @@ async function choose(comboId: string, text: string): Promise<void> {
   const items = [...document.querySelectorAll<HTMLLIElement>(`#${comboId} .combo__item`)];
   const item = items.find((li) => li.textContent?.includes(text));
   if (!item) throw new Error(`no matching item "${text}" in ${comboId}`);
-  item.dispatchEvent(new MouseEvent('mousedown', { bubbles: true }));
+  // Mirror the real activation path: pointerdown (focus kept) + click (choose).
+  item.dispatchEvent(new MouseEvent('pointerdown', { bubbles: true, cancelable: true }));
+  item.dispatchEvent(new MouseEvent('click', { bubbles: true }));
   await tick();
 }
 

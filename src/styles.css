@@ -146,10 +146,18 @@ input:focus,
   list-style: none;
   max-height: 320px;
   overflow: auto;
+  overscroll-behavior: contain;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 10px;
   box-shadow: var(--shadow);
+}
+
+/* Flip above the field when there is not enough room below (e.g. a mobile
+   keyboard leaves only a sliver of the visual viewport). */
+.combo__list--up {
+  top: auto;
+  bottom: calc(100% + 4px);
 }
 
 .combo__item {
@@ -159,6 +167,7 @@ input:focus,
   padding: 0.5rem 0.6rem;
   border-radius: 8px;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 .combo__item.is-active {

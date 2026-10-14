@@ -15,6 +15,13 @@ interface ComboboxOptions {
 
 /**
  * Accessible searchable dropdown (combobox) with fuzzy matching.
+ *
+ * Options are activated on `click`: that event fires for both taps and mouse
+ * clicks, but is *not* fired when a touch turns into a scroll gesture. The
+ * `pointerdown`/`mousedown` handlers only cancel the default action so the
+ * field keeps focus (and the on-screen keyboard stays put) while the tap
+ * resolves. This avoids two mobile failure modes of an `mousedown`-only setup:
+ * scroll-swallowed taps and the blur/close racing ahead of the tap.
  */
 export class Combobox {
   readonly el: HTMLDivElement;
@@ -26,6 +33,14 @@ export class Combobox {
   private active = -1;
   private selected: string | null = null;
   private opts: ComboboxOptions;
+
+  private onDocumentPointerDown = (e: Event): void => {
+    if (!this.el.contains(e.target as Node)) this.close();
+  };
+
+  private reposition = (): void => {
+    if (!this.list.hidden) this.position();
+  };
 
   constructor(opts: ComboboxOptions) {
     this.opts = opts;
@@ -40,6 +55,7 @@ export class Combobox {
     this.input.setAttribute('role', 'combobox');
     this.input.setAttribute('aria-expanded', 'false');
     this.input.setAttribute('aria-autocomplete', 'list');
+    this.input.setAttribute('enterkeyhint', 'search');
     if (opts.ariaLabel) this.input.setAttribute('aria-label', opts.ariaLabel);
 
     this.list = document.createElement('ul');
@@ -54,13 +70,35 @@ export class Combobox {
       this.opts.onSelect(null);
       this.open(this.filter(this.input.value));
     });
+    // Re-open on tap/click, including when the field is already focused.
     this.input.addEventListener('focus', () => this.open(this.filter(this.input.value)));
+    this.input.addEventListener('click', () => this.open(this.filter(this.input.value)));
     this.input.addEventListener('keydown', (e) => this.onKeydown(e));
-    this.input.addEventListener('blur', () => window.setTimeout(() => this.close(), 120));
     this.input.addEventListener('change', () => {
       const exact = this.items.find((i) => i.label.toLowerCase() === this.input.value.trim().toLowerCase());
       if (!exact) this.selected = null;
     });
+
+    // Close only when focus actually leaves the widget (no fixed-delay race).
+    this.el.addEventListener('focusout', (e) => {
+      const next = (e as FocusEvent).relatedTarget as Node | null;
+      if (!next || !this.el.contains(next)) this.close();
+    });
+    // Reliable outside-tap close on touch devices.
+    document.addEventListener('pointerdown', this.onDocumentPointerDown, true);
+    // Keep the flip-up decision correct when the on-screen keyboard resizes
+    // the visual viewport after the field receives focus.
+    window.addEventListener('resize', this.reposition);
+    window.visualViewport?.addEventListener('resize', this.reposition);
+    window.visualViewport?.addEventListener('scroll', this.reposition);
+  }
+
+  /** Detach the global listeners created in the constructor. */
+  destroy(): void {
+    document.removeEventListener('pointerdown', this.onDocumentPointerDown, true);
+    window.removeEventListener('resize', this.reposition);
+    window.visualViewport?.removeEventListener('resize', this.reposition);
+    window.visualViewport?.removeEventListener('scroll', this.reposition);
   }
 
   setItems(items: ComboItem[]): void {
@@ -104,12 +142,29 @@ export class Combobox {
     this.render();
     this.list.hidden = items.length === 0;
     this.input.setAttribute('aria-expanded', String(!this.list.hidden));
+    if (!this.list.hidden) this.position();
   }
 
   private close(): void {
     this.list.hidden = true;
     this.input.setAttribute('aria-expanded', 'false');
     this.active = -1;
+  }
+
+  /**
+   * Flip the list above the field when there is not enough room below (e.g.
+   * the on-screen keyboard leaves only a sliver of the visual viewport).
+   */
+  private position(): void {
+    const rect = this.input.getBoundingClientRect();
+    const vv = window.visualViewport;
+    const viewportTop = vv?.offsetTop ?? 0;
+    const viewportBottom = viewportTop + (vv?.height ?? window.innerHeight);
+    const spaceBelow = viewportBottom - rect.bottom;
+    const spaceAbove = rect.top - viewportTop;
+    const listHeight = Math.min(this.list.scrollHeight || 0, 320);
+    const openUp = spaceBelow < listHeight + 16 && spaceAbove > spaceBelow;
+    this.list.classList.toggle('combo__list--up', openUp);
   }
 
   private render(): void {
@@ -126,7 +181,6 @@ export class Combobox {
       li.className = 'combo__item' + (i === this.active ? ' is-active' : '');
       li.setAttribute('role', 'option');
       li.setAttribute('aria-selected', String(item.value === this.selected));
-      li.innerHTML = '';
       const label = document.createElement('span');
       label.textContent = item.label;
       li.append(label);
@@ -136,16 +190,23 @@ export class Combobox {
         hint.textContent = item.hint;
         li.append(hint);
       }
-      li.addEventListener('mousedown', (e) => {
-        e.preventDefault();
-        this.choose(item);
-      });
+      // Keep focus (and the keyboard) on the input while the tap resolves.
+      // Do not choose here: a scroll gesture would select the wrong row.
+      li.addEventListener('pointerdown', (e) => e.preventDefault());
+      li.addEventListener('mousedown', (e) => e.preventDefault());
+      li.addEventListener('click', () => this.choose(item));
       li.addEventListener('mouseenter', () => {
         this.active = i;
-        this.render();
+        this.updateActive();
       });
       this.list.append(li);
     });
+  }
+
+  /** Toggle the active row without rebuilding the list (safe mid-tap). */
+  private updateActive(): void {
+    const nodes = this.list.querySelectorAll<HTMLLIElement>('.combo__item');
+    nodes.forEach((node, idx) => node.classList.toggle('is-active', idx === this.active));
   }
 
   private choose(item: ComboItem): void {
@@ -155,6 +216,20 @@ export class Combobox {
     this.opts.onSelect(item.value);
   }
 
+  /** Resolve what Enter should pick, even if the list is no longer open. */
+  private currentChoice(): ComboItem | null {
+    if (!this.list.hidden && this.active >= 0) {
+      const active = this.visible[this.active];
+      if (active) return active;
+    }
+    const query = this.input.value.trim().toLowerCase();
+    if (!query) return null;
+    const exact = this.items.find((i) => i.label.toLowerCase() === query);
+    if (exact) return exact;
+    const matches = this.list.hidden ? this.filter(this.input.value) : this.visible;
+    return matches[0] ?? null;
+  }
+
   private onKeydown(e: KeyboardEvent): void {
     if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
       e.preventDefault();
@@ -162,14 +237,16 @@ export class Combobox {
         this.open(this.filter(this.input.value));
         return;
       }
+      if (!this.visible.length) return;
       const delta = e.key === 'ArrowDown' ? 1 : -1;
       this.active = (this.active + delta + this.visible.length) % this.visible.length;
-      this.render();
+      this.updateActive();
       this.list.querySelector('.is-active')?.scrollIntoView({ block: 'nearest' });
-    } else if (e.key === 'Enter') {
-      if (!this.list.hidden && this.active >= 0) {
+    } else if (e.key === 'Enter' || e.keyCode === 13) {
+      const item = this.currentChoice();
+      if (item) {
         e.preventDefault();
-        this.choose(this.visible[this.active]);
+        this.choose(item);
       }
     } else if (e.key === 'Escape') {
       this.close();
