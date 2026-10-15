@@ -11,6 +11,9 @@ w swoim kalendarzu (Google / Apple / Outlook) albo pobierz plik `.ics`.
 > na rejony (1, 2A, 2B, 3, 4, 5, 6A, 6B, 7, 8, 9, 10). Poprzedni harmonogram
 > (styczeń - wrzesień 2026, stary podział na 13 rejonów) jest zachowany tylko
 > jako archiwum w `source_data/archiwum/` i nie trafia na stronę.
+>
+> Szczegóły tej zmiany (analiza podziału na rejony, decyzje, weryfikacja):
+> [`docs/2026Q4-remodel.md`](docs/2026Q4-remodel.md).
 
 ## Jak to działa
 
@@ -87,6 +90,7 @@ pipeline/
   constants.ts           # frakcje, miesiące, granice kolumn, miejscowości
   generate-ics.ts        # składanie plików .ics
 tests/                   # vitest: parser danych, resolver, ICS, smoke test DOM
+docs/                    # notatki projektowe (decyzje, weryfikacja)
 ```
 
 ## Uwagi o danych źródłowych
