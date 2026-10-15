@@ -25,8 +25,8 @@ export const FRACTION_BY_ID: Record<string, Fraction> = Object.fromEntries(FRACT
 
 /**
  * Column x-boundaries (PDF user-space units, origin bottom-left) that map a date
- * token to a fraction. Tuned so every token across all 13 source PDFs sits at
- * least 10 units away from any boundary.
+ * token to a fraction. Tuned so every token across the source PDFs (both the
+ * full-year 2026 set and the Oct-Dec 2026 set) sits clear of any boundary.
  */
 export const COL_BOUNDS = [180, 272, 350, 440, 528, 608, 690];
 

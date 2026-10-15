@@ -2,7 +2,7 @@ import type { StreetsFile, StreetEntry } from './lib/types';
 
 export interface Resolved {
   kind: 'resolved';
-  rejon: number;
+  rejon: string;
   /** entry used for the decision (undefined when matched via whole locality) */
   entry?: StreetEntry;
   /** true when the region was determined by whole-locality coverage */
@@ -64,7 +64,9 @@ export function resolveAddress(
 /** Human-readable condition for a candidate entry. */
 export function describeEntry(entry: StreetEntry): string {
   if (entry.parzystosc) return `numery ${entry.parzystosc}`;
-  if (entry.nr_od != null && entry.nr_do != null) return `numery ${entry.nr_od}-${entry.nr_do}`;
+  if (entry.nr_od != null && entry.nr_do != null) {
+    return entry.nr_od === entry.nr_do ? `numer ${entry.nr_od}` : `numery ${entry.nr_od}-${entry.nr_do}`;
+  }
   if (entry.nr_od != null) return `numery od ${entry.nr_od}`;
   if (entry.nr_do != null) return `numery do ${entry.nr_do}`;
   return 'cała ulica';

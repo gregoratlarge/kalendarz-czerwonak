@@ -3,19 +3,19 @@
   "localities": [
     {
       "miasto": "Annowo",
-      "pelny_rejon": 3
+      "pelny_rejon": "3"
     },
     {
       "miasto": "Bolechowo",
-      "pelny_rejon": 5
+      "pelny_rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
-      "pelny_rejon": 5
+      "pelny_rejon": "5"
     },
     {
       "miasto": "Bolechówko",
-      "pelny_rejon": 4
+      "pelny_rejon": "4"
     },
     {
       "miasto": "Czerwonak",
@@ -23,7 +23,7 @@
     },
     {
       "miasto": "Dębogóra",
-      "pelny_rejon": 11
+      "pelny_rejon": "2b"
     },
     {
       "miasto": "Kicin",
@@ -31,1739 +31,1713 @@
     },
     {
       "miasto": "Kliny",
-      "pelny_rejon": 11
+      "pelny_rejon": "2b"
     },
     {
       "miasto": "Koziegłowy",
-      "pelny_rejon": 12
+      "pelny_rejon": "10"
     },
     {
       "miasto": "Ludwikowo",
-      "pelny_rejon": 11
+      "pelny_rejon": "1"
     },
     {
       "miasto": "Mielno",
-      "pelny_rejon": 11
+      "pelny_rejon": "1"
     },
     {
       "miasto": "Miękowo",
-      "pelny_rejon": 13
+      "pelny_rejon": "6a"
     },
     {
       "miasto": "Owińska",
-      "pelny_rejon": 3
+      "pelny_rejon": "3"
     },
     {
       "miasto": "Potasze",
-      "pelny_rejon": 4
+      "pelny_rejon": "4"
     },
     {
       "miasto": "Promnice",
-      "pelny_rejon": 6
+      "pelny_rejon": "6b"
     },
     {
       "miasto": "Szlachęcin",
-      "pelny_rejon": 6
+      "pelny_rejon": "6b"
     },
     {
       "miasto": "Trzaskowo",
-      "pelny_rejon": 4
+      "pelny_rejon": "4"
     }
   ],
   "streets": [
     {
       "miasto": "Annowo",
       "ulica": "Dożynkowa",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Annowo",
       "ulica": "Gospodarska",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Annowo",
       "ulica": "Spichrzowa",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Bolechowo",
       "ulica": "Boczna",
-      "rejon": 5
-    },
-    {
-      "miasto": "Bolechowo",
-      "ulica": "Handlowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo",
       "ulica": "Kręta",
-      "rejon": 5
+      "rejon": "5"
+    },
+    {
+      "miasto": "Bolechowo",
+      "ulica": "Krzywa",
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo",
       "ulica": "Leśna",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo",
       "ulica": "Leśne Zacisze",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo",
       "ulica": "Mniszkowa",
-      "rejon": 5
-    },
-    {
-      "miasto": "Bolechowo",
-      "ulica": "Modra",
-      "rejon": 5
-    },
-    {
-      "miasto": "Bolechowo",
-      "ulica": "Parkowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo",
       "ulica": "Poligonowa",
-      "rejon": 5
-    },
-    {
-      "miasto": "Bolechowo",
-      "ulica": "Poligraficzna",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo",
       "ulica": "Polna",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo",
       "ulica": "Poznańska",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo",
       "ulica": "Szkolna",
-      "rejon": 5
-    },
-    {
-      "miasto": "Bolechowo",
-      "ulica": "Warzywna",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Adama Mickiewicza",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Ametystowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Bydgoska",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Cypriana Kamila Norwida",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Dworcowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Grabowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Graniczna",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Juliusza Słowackiego",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Kolejowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Kwiatowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Leśna",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Modra",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Obornicka",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Ogrodowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Olchowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Opalowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Owocowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Poprzeczna",
-      "rejon": 5
-    },
-    {
-      "miasto": "Bolechowo-Osiedle",
-      "ulica": "Przemysłowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Rubinowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Sadowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Szmaragdowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Turkusowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Warzywna",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Wojska Polskiego",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Zagajnikowa",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechowo-Osiedle",
       "ulica": "Zielona",
-      "rejon": 5
+      "rejon": "5"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Akacjowa",
-      "rejon": 4
+      "rejon": "4"
+    },
+    {
+      "miasto": "Bolechówko",
+      "ulica": "Azaliowa",
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Bławatkowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Cisowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Daglezjowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Dereniowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Frezjowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Jodłowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Kręta",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Kwiatowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Lipowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Łubinowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Macierzankowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Magnoliowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Maków Polnych",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Malwowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Migdałowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Modrakowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Modrzewiowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Nagietkowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Platanowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Sosnowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Bolechówko",
       "ulica": "Storczykowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Akacjowa",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Błękitna",
-      "rejon": 9
+      "rejon": "7",
+      "nr_od": 10,
+      "nr_do": 10
+    },
+    {
+      "miasto": "Czerwonak",
+      "ulica": "Błękitna",
+      "rejon": "9",
+      "nr_do": 9
+    },
+    {
+      "miasto": "Czerwonak",
+      "ulica": "Błękitna",
+      "rejon": "9",
+      "nr_od": 11
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Bolesława Chrobrego",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Brzozowa",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Bukowa",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Dąbrówki",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Dębowa",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Dojazd",
-      "rejon": 7
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Dolna",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Działkowa",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Dziewicza Góra",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Gajowa",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Gdyńska",
-      "rejon": 10
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Grzybowa",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Jagodowa",
-      "rejon": 7
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Jana III Sobieskiego",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Jesionowa",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Jeżynowa",
-      "rejon": 7
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Kasztanowa",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Kazimierza Wielkiego",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Klonowa",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Konwaliowa",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Kościelna",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Kręta",
-      "rejon": 7
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Krótka",
-      "rejon": 7
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Lazurowa",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Lecha",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Leśna",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Letnia",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Łąkowa",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Makowa",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Malinowa",
-      "rejon": 7
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Marysieńki",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Mieszka I",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Morenowa",
-      "rejon": 7
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Nowa",
-      "rejon": 7
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Okrężna",
-      "rejon": 7
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Piaskowa",
-      "rejon": 8
-    },
-    {
-      "miasto": "Czerwonak",
-      "ulica": "Plac Zielony",
-      "rejon": 7
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Podgórna",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Pogodna",
-      "rejon": 7
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Polna",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Południowa",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Poprzeczna",
-      "rejon": 8
-    },
-    {
-      "miasto": "Czerwonak",
-      "ulica": "Portowa",
-      "rejon": 10
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Poziomkowa",
-      "rejon": 7
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Przemysła II",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Rolna",
-      "rejon": 8
-    },
-    {
-      "miasto": "Czerwonak",
-      "ulica": "Słoneczna",
-      "rejon": 7
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Sosnowa",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Spokojna",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Stawna",
-      "rejon": 7
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Stroma",
-      "rejon": 7
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Sucha",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Szkolna",
-      "rejon": 10
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Szyszkowa",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Św. Jadwigi",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Św. Wojciecha",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Świerkowa",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Tęczowa",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Wiosenna",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Władysława Jagiełły",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Władysława Łokietka",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Wrzosowa",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Wschodnia",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Zachodnia",
-      "rejon": 8
+      "rejon": "8"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Zacisze",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Zagórze",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Zakątek",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Zalesie",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Zdroje",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Zielona",
-      "rejon": 8
+      "rejon": "8"
+    },
+    {
+      "miasto": "Czerwonak",
+      "ulica": "Zielony",
+      "rejon": "7"
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Źródlana",
-      "rejon": 8,
-      "nr_do": 73
+      "rejon": "8",
+      "nr_do": 72
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Źródlana",
-      "rejon": 9,
+      "rejon": "9",
       "nr_od": 74
     },
     {
       "miasto": "Czerwonak",
       "ulica": "Żurawia",
-      "rejon": 9
+      "rejon": "9"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Brzozowa",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Czeremchowa",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Dąbrówki",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Dębowa",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Głogowa",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Grabowa",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Jaworowa",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Kalinowa",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Karłowicka",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Kasztanowa",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Klonowa",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Leśna",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
-      "ulica": "Sarnia",
-      "rejon": 11
+      "ulica": "Miłorzębowa",
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Wiązowa",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Dębogóra",
       "ulica": "Wierzbowa",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Kicin",
       "ulica": "Berberysowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Bratkowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Chabrowa",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Cyprysowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Daglezjowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Działkowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Fabryczna",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Fiołkowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Gwarna",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Jałowcowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Jonschera",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Kłosowa",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Kościelna",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
-      "ulica": "Ks. Ludwika Hassego",
-      "rejon": 2
+      "ulica": "Ks. Ludwika Haasego",
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Lawendowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Liliowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Łanowa",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Makowa",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Nagietkowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Nowe Osiedle",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Okrężna",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Pod Lasem",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Poznańska",
-      "rejon": 2,
-      "parzystosc": "parzyste"
-    },
-    {
-      "miasto": "Kicin",
-      "ulica": "Poznańska",
-      "rejon": 1,
+      "rejon": "1",
       "parzystosc": "nieparzyste"
     },
     {
       "miasto": "Kicin",
+      "ulica": "Poznańska",
+      "rejon": "2a",
+      "parzystosc": "parzyste"
+    },
+    {
+      "miasto": "Kicin",
       "ulica": "Prosta",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Radosna",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Rolna",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Różana",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Rumiankowa",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Rzemieślnicza",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Słonecznikowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Sosnowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Spokojna",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Strumykowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Sucha",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Swarzędzka",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Szkolna",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Św. Jakuba",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Tulipanowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Uprawna",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Wichrowa",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Widok",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Wiejska",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Wodna",
-      "rejon": 1
+      "rejon": "1"
     },
     {
       "miasto": "Kicin",
       "ulica": "Wrzosowa",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Zacisze",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Zakątek",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Zbożowa",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kicin",
       "ulica": "Żniwna",
-      "rejon": 2
+      "rejon": "2a"
     },
     {
       "miasto": "Kliny",
       "ulica": "Brzozowa",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Kliny",
       "ulica": "Cicha",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Kliny",
       "ulica": "Dzięcioła",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Kliny",
       "ulica": "Krucza",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Kliny",
       "ulica": "Miła",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Kliny",
       "ulica": "Poznańska",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Kliny",
       "ulica": "Skowronka",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Kliny",
       "ulica": "Sokoła",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Kliny",
       "ulica": "Sowia",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Kliny",
       "ulica": "Trakt",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Kliny",
       "ulica": "Urocza",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Kliny",
       "ulica": "Urokliwa",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Kliny",
       "ulica": "Zaciszna",
-      "rejon": 11
+      "rejon": "2b"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Gdyńska",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Generała Stanisława Taczaka",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Kanałowa",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Krótka",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Kwiatowa",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Leśna",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Leśne",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Lipowa",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Łąkowa",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Marszałka Józefa Piłsudskiego",
-      "rejon": 12
-    },
-    {
-      "miasto": "Koziegłowy",
-      "ulica": "Piaskowa",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Podgórna",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Polna",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Poznańska",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Rolna",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Roślinna",
-      "rejon": 12
+      "rejon": "10"
     },
     {
       "miasto": "Koziegłowy",
       "ulica": "Topolowa",
-      "rejon": 12
+      "rejon": "10"
+    },
+    {
+      "miasto": "Koziegłowy",
+      "ulica": "Żwirowa",
+      "rejon": "10"
     },
     {
       "miasto": "Mielno",
       "ulica": "Akacjowa",
-      "rejon": 11
+      "rejon": "1"
     },
     {
       "miasto": "Mielno",
       "ulica": "Borowikowa",
-      "rejon": 11
+      "rejon": "1"
     },
     {
       "miasto": "Mielno",
       "ulica": "Brzozowa",
-      "rejon": 11
+      "rejon": "1"
     },
     {
       "miasto": "Mielno",
       "ulica": "Grzybowa",
-      "rejon": 11
+      "rejon": "1"
     },
     {
       "miasto": "Mielno",
       "ulica": "Kurkowa",
-      "rejon": 11
+      "rejon": "1"
     },
     {
       "miasto": "Mielno",
       "ulica": "Leśna",
-      "rejon": 11
+      "rejon": "1"
     },
     {
       "miasto": "Mielno",
       "ulica": "Lisia",
-      "rejon": 11
+      "rejon": "1"
     },
     {
       "miasto": "Mielno",
       "ulica": "Łąkowa",
-      "rejon": 11
+      "rejon": "1"
     },
     {
       "miasto": "Mielno",
       "ulica": "Polna",
-      "rejon": 11
+      "rejon": "1"
     },
     {
       "miasto": "Mielno",
       "ulica": "Poznańska",
-      "rejon": 11
+      "rejon": "1"
     },
     {
       "miasto": "Mielno",
       "ulica": "Sarnia",
-      "rejon": 11
+      "rejon": "1"
     },
     {
       "miasto": "Mielno",
       "ulica": "Villa Morena",
-      "rejon": 11
+      "rejon": "1"
+    },
+    {
+      "miasto": "Miękowo",
+      "ulica": "Bajkowa",
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Baśniowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Czereśniowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Dojazd",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Górna",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Hiacyntowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Irysowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Juliusza Słowackiego",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Kolejowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Krokusowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Leśna",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Łąkowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Majowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
-      "ulica": "Na Skarpie",
-      "rejon": 13
+      "ulica": "Miodowa",
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Narcyzowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Ogrodowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Orzechowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Poznańska",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Sasankowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Stokrotkowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Szafirowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Szarotkowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Śnieżycowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Zacisze",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Miękowo",
       "ulica": "Zawilcowa",
-      "rejon": 13
+      "rejon": "6a"
     },
     {
       "miasto": "Owińska",
       "ulica": "Bydgoska",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Cysterek",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Dworcowa",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Jesionowa",
-      "rejon": 3
-    },
-    {
-      "miasto": "Owińska",
-      "ulica": "Kolejowa",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Krótka",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
-      "ulica": "Ks.antoniego Piotrowskiego",
-      "rejon": 3
+      "ulica": "Ks. Antoniego Piotrowskiego",
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Parkowa",
-      "rejon": 3
-    },
-    {
-      "miasto": "Owińska",
-      "ulica": "Pl. Przemysława",
-      "rejon": 3
-    },
-    {
-      "miasto": "Owińska",
-      "ulica": "Plażowa",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Polna",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Poprzeczna",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Poznańska",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Przemysława",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Sportowa",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Stawowa",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Szuwarowa",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Świerkowa",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Tatarakowa",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Owińska",
       "ulica": "Zielona",
-      "rejon": 3
-    },
-    {
-      "miasto": "Owińska",
-      "ulica": "Żwirownia",
-      "rejon": 3
+      "rejon": "3"
     },
     {
       "miasto": "Potasze",
       "ulica": "Brzoskwiniowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Cedrowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Czereśniowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Dębowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Gruszowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Jabłoniowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Jarzębinowa",
-      "rejon": 4
-    },
-    {
-      "miasto": "Potasze",
-      "ulica": "Jarzębionowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Jaśminowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Jaworowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Jodłowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Kwiatowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Leszczynowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Lipowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Morelowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Morwowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Oczarowa",
-      "rejon": 4
+      "rejon": "4"
+    },
+    {
+      "miasto": "Potasze",
+      "ulica": "Oliwkowa",
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Olszynowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Sosnowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Wierzbowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Potasze",
       "ulica": "Wiśniowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Promnice",
       "ulica": "Brzozowa",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Gajowa",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Górna",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Jodłowa",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Kasztanowa",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Klonowa",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Leśna",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Limbowa",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Modrzewiowa",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Południowa",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Północna",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Sosnowa",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Średnia",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Świerkowa",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Topolowa",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Wierzbowa",
-      "rejon": 6
+      "rejon": "6b"
     },
     {
       "miasto": "Promnice",
       "ulica": "Zalesie",
-      "rejon": 6
+      "rejon": "6b"
+    },
+    {
+      "miasto": "Promnice",
+      "ulica": "Zygmunta Krasińskiego",
+      "rejon": "6b"
     },
     {
       "miasto": "Trzaskowo",
       "ulica": "Golfowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Trzaskowo",
       "ulica": "Krajobrazowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Trzaskowo",
       "ulica": "Leśna Polana",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Trzaskowo",
       "ulica": "Przy Puszczy",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Trzaskowo",
       "ulica": "Rowerowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Trzaskowo",
       "ulica": "Turystyczna",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Trzaskowo",
       "ulica": "Wycieczkowa",
-      "rejon": 4
+      "rejon": "4"
     },
     {
       "miasto": "Trzaskowo",
       "ulica": "Wypoczynkowa",
-      "rejon": 4
+      "rejon": "4"
     }
   ]
 }

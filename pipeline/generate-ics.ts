@@ -1,5 +1,6 @@
 import { FRACTIONS, MONTHS } from './constants.ts';
 import { generateIcs, type IcsEvent } from '../src/lib/ics.ts';
+import { regionLabel } from '../src/lib/regions.ts';
 import type { RegionData } from '../src/lib/types.ts';
 
 const UID_DOMAIN = 'gregoratlarge.github.io';
@@ -43,9 +44,10 @@ export interface GeneratedFeed {
 /** Generate the "subscribe to the whole region" feed. */
 export function buildRegionFeed(region: RegionData, rok: number): GeneratedFeed {
   const events = buildRegionEvents(region, rok);
+  const label = regionLabel(region.rejon);
   const content = generateIcs({
-    name: `Odpady Czerwonak - Rejon ${region.rejon} (${rok})`,
-    description: `Harmonogram wywozu odpadów - Rejon ${region.rejon}, Gmina Czerwonak, ${rok}`,
+    name: `Odpady Czerwonak - Rejon ${label} (${rok})`,
+    description: `Harmonogram wywozu odpadów - Rejon ${label}, Gmina Czerwonak, ${rok}`,
     events,
   });
   return { filename: `rejon-${region.rejon}.ics`, content, eventCount: events.length };
@@ -58,9 +60,10 @@ export function buildFractionFeed(region: RegionData, rok: number, fractionId: s
   if (!fraction || !byMonth) return null;
   const all = buildRegionEvents(region, rok).filter((e) => e.categories?.[0] === fraction.label);
   if (all.length === 0) return null;
+  const label = regionLabel(region.rejon);
   const content = generateIcs({
-    name: `Odpady Czerwonak - Rejon ${region.rejon} - ${fraction.label} (${rok})`,
-    description: `${fraction.label} - Rejon ${region.rejon}, Gmina Czerwonak, ${rok}`,
+    name: `Odpady Czerwonak - Rejon ${label} - ${fraction.label} (${rok})`,
+    description: `${fraction.label} - Rejon ${label}, Gmina Czerwonak, ${rok}`,
     events: all,
   });
   return { filename: `rejon-${region.rejon}-${fractionId}.ics`, content, eventCount: all.length };

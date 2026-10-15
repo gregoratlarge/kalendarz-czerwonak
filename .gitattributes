@@ -8,3 +8,4 @@
 # Binary assets.
 *.pdf binary
 *.xlsx binary
+*.docx binary

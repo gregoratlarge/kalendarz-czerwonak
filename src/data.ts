@@ -32,7 +32,7 @@ export async function loadYear(year: number): Promise<LoadedYear> {
   return { entry, regions, streets };
 }
 
-export function regionByNumber(regions: RegionsFile, rejon: number): RegionData | undefined {
+export function regionById(regions: RegionsFile, rejon: string): RegionData | undefined {
   return regions.regions.find((r) => r.rejon === rejon);
 }
 
@@ -41,7 +41,7 @@ export function fractionById(regions: RegionsFile, id: string): Fraction | undef
 }
 
 /** Absolute URL of his region's subscription feed for a given year. */
-export function icsUrl(entry: YearIndexEntry, rejon: number, fractionId?: string): string {
+export function icsUrl(entry: YearIndexEntry, rejon: string, fractionId?: string): string {
   const file = fractionId ? `rejon-${rejon}-${fractionId}.ics` : `rejon-${rejon}.ics`;
   return new URL(`${BASE}${entry.icsBase}/${file}`, window.location.origin).href;
 }

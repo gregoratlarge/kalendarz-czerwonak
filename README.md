@@ -5,23 +5,37 @@ miejscowość i ulicę, zobacz kalendarz odbioru odpadów i **subskrybuj** go
 w swoim kalendarzu (Google / Apple / Outlook) albo pobierz plik `.ics`.
 
 - Strona: <https://gregoratlarge.github.io/kalendarz-czerwonak/>
-- Dane źródłowe: harmonogramy PDF + arkusz „Opis rejonów” z [czerwonak.pl](https://czerwonak.pl/pl/mieszkaniec/informacje/aktualnosci/harmonogram-wywozu-odpadow-na-rok-2026/9588)
+- Dane źródłowe: harmonogramy PDF (nowe rejony) z [czerwonak.pl](https://www.czerwonak.pl/pl/mieszkaniec/informacje/aktualnosci/nowe-harmonogramy-odbioru-odpadow-komunalnych-z-nieruchomosci-znajdujacych-sie-na-terenie-gminy-czerwonak/10734)
+
+> **Aktualny zakres danych:** październik - grudzień 2026, według nowego podziału
+> na rejony (1, 2A, 2B, 3, 4, 5, 6A, 6B, 7, 8, 9, 10). Poprzedni harmonogram
+> (styczeń - wrzesień 2026, stary podział na 13 rejonów) jest zachowany tylko
+> jako archiwum w `source_data/archiwum/` i nie trafia na stronę.
 
 ## Jak to działa
 
-1. **Pipeline** (`pipeline/`) parsuje 13 plików `rejon*.pdf` oraz
-   `rejonyczerwonak.xlsx` i generuje:
+1. **Pipeline** (`pipeline/`) parsuje pliki `rejon*.pdf` z katalogu
+   `source_data/<okres>/` (np. `2026Q4`) i generuje:
    - `public/data/index.json` - lista dostępnych lat,
-   - `public/data/<rok>/regions.json` - harmonogramy 13 rejonów (12 miesięcy × 8 frakcji),
+   - `public/data/<rok>/regions.json` - harmonogramy rejonów (12 miesięcy × 8 frakcji;
+     wypełnione tylko miesiące objęte dokumentem),
    - `public/data/<rok>/streets.json` - indeks miejscowości i ulic,
-   - `public/ics/<rok>/rejon-<n>.ics` - feed do subskrypcji dla całego rejonu,
-   - `public/ics/<rok>/rejon-<n>-<frakcja>.ics` - feedy pojedynczych frakcji.
+   - `public/ics/<rok>/rejon-<id>.ics` - feed do subskrypcji dla całego rejonu,
+   - `public/ics/<rok>/rejon-<id>-<frakcja>.ics` - feedy pojedynczych frakcji.
+
+   Lista ulic jest budowana **wprost z nagłówków PDF-ów** (każdy rejon wylicza
+   obsługiwane miejscowości i ulice), więc nie ma już osobnego arkusza do
+   parsowania ani tabeli korekt.
 2. **Aplikacja** (`src/`) to Vite + TypeScript (bez frameworka). Ładuje dane z
    `public/data`, prezentuje kalendarz (FullCalendar, widok miesiąca i listy) oraz
    obsługuje subskrypcję/pobieranie `.ics`.
 
 Wszystkie zdarzenia są **całodniowe**, a tytuł to `Odpady: ` + nazwa frakcji z
 dokumentu źródłowego (np. `Odpady: Metale i tworzywa sztuczne`).
+
+Identyfikator rejonu (`rejon`) odpowiada nazwie pliku (`2a`, `6b`), bo służy też
+jako fragment adresu `.ics`; do wyświetlania używana jest forma z `lib/regions.ts`
+(`2a` → `2A`).
 
 ## Uruchomienie lokalne
 
@@ -42,12 +56,16 @@ npm run build      # dane + build produkcyjny do dist/
 npm run preview    # podgląd builda
 ```
 
-## Dodanie kolejnego roku
+## Dodanie kolejnego okresu
 
-1. Utwórz katalog `source_data/<rok>/` i wgraj `rejon1.pdf`…`rejon13.pdf`
-   oraz `rejonyczerwonak.xlsx`.
-2. Uruchom `npm run data` - nowy rok pojawi się automatycznie w
+1. Utwórz katalog `source_data/<okres>/`, np. `2027` lub `2027Q1`, i wgraj pliki
+   `rejon*.pdf` (zestaw i nazwy rejonów mogą się zmieniać - parser odkrywa je
+   automatycznie, a identyfikatorem rejonu jest część nazwy po `rejon`).
+2. Uruchom `npm run data` - rok pojawi się automatycznie w
    `public/data/index.json` i w selektorze roku na stronie.
+
+Katalogi w `source_data/`, których nazwa nie zaczyna się od czterech cyfr (np.
+`archiwum`), są ignorowane.
 
 ## Struktura repo
 
@@ -61,25 +79,30 @@ src/
   data.ts                # ładowanie danych i budowanie URL-i .ics
   lib/ics.ts             # generator iCalendar (RFC 5545), wspólny z pipeline
   lib/events.ts          # rozwijanie harmonogramu do zdarzeń całodniowych
+  lib/regions.ts         # etykieta rejonu do wyświetlania (2a → 2A)
 pipeline/
-  run.ts                 # orkiestracja: rok → regions.json / streets.json / .ics
-  pdf.ts                 # parser PDF (pdfjs-dist)
-  xlsx.ts                # parser arkusza ulic (SheetJS)
-  constants.ts           # frakcje, miesiące, granice kolumn
-  overrides.ts           # udokumentowane korekty danych źródłowych
+  run.ts                 # orkiestracja: okres → regions.json / streets.json / .ics
+  pdf.ts                 # parser PDF (pdfjs-dist): harmonogram + nagłówek
+  streets.ts             # budowa indeksu ulic z nagłówków PDF
+  constants.ts           # frakcje, miesiące, granice kolumn, miejscowości
+  generate-ics.ts        # składanie plików .ics
 tests/                   # vitest: parser danych, resolver, ICS, smoke test DOM
 ```
 
 ## Uwagi o danych źródłowych
 
-- **Kicin, ul. Poznańska** jest dzielona na rejony 1/2 według parzystości numerów;
-  **Czerwonak, ul. Źródlana** na rejony 8/9 według numeru (do 73 / od 74).
+- **Kicin, ul. Poznańska** jest dzielona na rejony 1/2A według parzystości numerów;
+  **Czerwonak, ul. Źródlana** na rejony 8/9 (do 72 / od 74), a **Czerwonak,
+  ul. Błękitna** ma numer 10 w rejonie 7, a pozostałe numery w rejonie 9.
   Aplikacja prosi wtedy o numer domu.
+- Miejscowości obsługiwane w całości przez jeden rejon (np. Owińska, Koziegłowy,
+  Ludwikowo, Szlachęcin) można wybrać bez podawania ulicy.
 - „Mycie pojemników” jest w źródle oznaczone tylko miesiącem (✓), bez dnia.
   W aplikacji pokazujemy miesiąc i informację, że termin ustala wykonawca;
-  zdarzenie nie trafia do pliku `.ics`, bo nie ma konkretnej daty.
-- `pipeline/overrides.ts` zawiera kilka potwierdzonych nieścisłości arkusza
-  (np. brak `Malinowa` w rejonie 7, warianty pisowni `Hassego`, `Słowackiego`).
+  zdarzenie nie trafia do pliku `.ics`, bo nie ma konkretnej daty. W okresie
+  październik - grudzień 2026 źródło nie podaje żadnego terminu mycia.
+- „Bioodpady - drzewka świąteczne” to zbiórka styczniowa; w tym okresie nie ma
+  żadnych terminów, więc frakcja nie generuje plików `.ics`.
 
 ## Wdrożenie
 

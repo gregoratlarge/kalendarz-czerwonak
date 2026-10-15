@@ -75,7 +75,8 @@ describe('app wiring', () => {
     const result = document.querySelector<HTMLElement>('#result')!;
     expect(result.hidden).toBe(false);
     expect(document.querySelector('#region-title')?.textContent).toBe('Rejon 3');
-    expect(document.querySelectorAll('#schedule-table tbody tr')).toHaveLength(12);
+    expect(document.querySelectorAll('#schedule-table tbody tr')).toHaveLength(3);
+    expect(document.querySelector('#schedule-heading')?.textContent).toContain('październik - grudzień 2026');
     await tick();
     expect((document.querySelector('#calendar') as HTMLElement).childElementCount).toBeGreaterThan(0);
   });

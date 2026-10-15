@@ -4,8 +4,9 @@ import { createCalendar, toEventInputs } from './calendar';
 import { buildWasteEvents } from './lib/events';
 import { wasteEventsToIcs, downloadText } from './ics-export';
 import { resolveAddress, describeEntry } from './resolve';
-import { loadIndex, loadYear, regionByNumber, icsUrl, type LoadedYear } from './data';
+import { loadIndex, loadYear, regionById, icsUrl, type LoadedYear } from './data';
 import { detectPlatform } from './platform';
+import { regionLabel } from './lib/regions';
 import type { YearIndexEntry, RegionData, StreetEntry } from './lib/types';
 
 const MONTHS = [
@@ -25,7 +26,15 @@ const SHORT_FRACTION: Record<string, string> = {
 };
 
 const SOURCE_URL =
-  'https://czerwonak.pl/pl/mieszkaniec/informacje/aktualnosci/harmonogram-wywozu-odpadow-na-rok-2026/9588';
+  'https://www.czerwonak.pl/pl/mieszkaniec/informacje/aktualnosci/nowe-harmonogramy-odbioru-odpadow-komunalnych-z-nieruchomosci-znajdujacych-sie-na-terenie-gminy-czerwonak/10734';
+
+/** Human-readable period covered by the loaded schedule, e.g. "październik - grudzień 2026". */
+function periodLabel(miesiace: number[], rok: number): string {
+  if (miesiace.length === 0) return String(rok);
+  const first = MONTHS[miesiace[0]].toLowerCase();
+  const last = MONTHS[miesiace[miesiace.length - 1]].toLowerCase();
+  return first === last ? `${first} ${rok}` : `${first} - ${last} ${rok}`;
+}
 
 // Google Calendar's "Add by URL" form. Used on phones, where the mobile apps
 // cannot subscribe to a feed and the /render?cid= deep link does not work.
@@ -43,6 +52,7 @@ const el = {
   regionTitle: $('region-title'),
   regionMeta: $('region-meta'),
   calendarNote: $('calendar-note'),
+  scheduleHeading: $('schedule-heading'),
   fractions: $('fractions'),
   scheduleTable: $<HTMLTableElement>('schedule-table'),
   icsLink: $<HTMLAnchorElement>('ics-link'),
@@ -87,7 +97,7 @@ function hideResult(): void {
 }
 
 function fractionHint(entry: StreetEntry): string {
-  const parts = [`Rejon ${entry.rejon}`];
+  const parts = [`Rejon ${regionLabel(entry.rejon)}`];
   const qualifier = describeEntry(entry);
   if (qualifier !== 'cała ulica') parts.push(qualifier);
   return parts.join(' · ');
@@ -108,7 +118,7 @@ function selectCity(city: string, auto = true): void {
 
   if (auto && locality?.pelny_rejon != null) {
     showResult(locality.pelny_rejon, undefined, true, city, null);
-    setStatus(`Cała miejscowość - Rejon ${locality.pelny_rejon}. Możesz też wybrać ulicę, aby potwierdzić.`);
+    setStatus(`Cała miejscowość - Rejon ${regionLabel(locality.pelny_rejon)}. Możesz też wybrać ulicę, aby potwierdzić.`);
   } else {
     hideResult();
     setStatus(streetOptions.length ? 'Wybierz ulicę.' : 'Brak ulic dla tej miejscowości.');
@@ -172,7 +182,7 @@ function showAmbiguity(candidates: StreetEntry[]): void {
     const b = document.createElement('button');
     b.type = 'button';
     b.className = 'btn';
-    b.textContent = `Rejon ${c.rejon} - ${describeEntry(c)}`;
+    b.textContent = `Rejon ${regionLabel(c.rejon)} - ${describeEntry(c)}`;
     b.addEventListener('click', () => {
       el.ambiguity.hidden = true;
       if (cityValue) showResult(c.rejon, c, false, cityValue, streetName);
@@ -183,9 +193,9 @@ function showAmbiguity(candidates: StreetEntry[]): void {
   setStatus('Ulica podzielona między rejony - doprecyzuj numer domu.');
 }
 
-function showResult(rejon: number, entry: StreetEntry | undefined, viaLocality: boolean, city: string, street: string | null): void {
+function showResult(rejon: string, entry: StreetEntry | undefined, viaLocality: boolean, city: string, street: string | null): void {
   if (!loaded) return;
-  const region = regionByNumber(loaded.regions, rejon);
+  const region = regionById(loaded.regions, rejon);
   if (!region) return;
   currentRegion = region;
 
@@ -194,8 +204,10 @@ function showResult(rejon: number, entry: StreetEntry | undefined, viaLocality: 
     fractionsInitialised = true;
   }
 
-  el.regionTitle.textContent = `Rejon ${rejon}`;
+  const label = regionLabel(rejon);
+  el.regionTitle.textContent = `Rejon ${label}`;
   el.regionMeta.textContent = region.lokalizacje;
+  el.scheduleHeading.textContent = `Harmonogram: ${periodLabel(loaded.regions.miesiace, loaded.entry.rok)}`;
   el.calendarNote.hidden = true;
 
   renderFractionChips(region);
@@ -208,8 +220,8 @@ function showResult(rejon: number, entry: StreetEntry | undefined, viaLocality: 
   const qualifier = entry && describeEntry(entry) !== 'cała ulica' ? ` (${describeEntry(entry)})` : '';
   setStatus(
     viaLocality
-      ? `${where}cała miejscowość obsługiwana w Rejonie ${rejon}.`
-      : `${where}znaleziono adres w Rejonie ${rejon}${qualifier}.`,
+      ? `${where}cała miejscowość obsługiwana w Rejonie ${label}.`
+      : `${where}znaleziono adres w Rejonie ${label}${qualifier}.`,
   );
 }
 
@@ -260,11 +272,11 @@ function renderSchedule(region: RegionData): void {
   thead.append(hrow);
 
   const tbody = document.createElement('tbody');
-  MONTHS.forEach((month, m) => {
+  for (const m of loaded!.regions.miesiace) {
     const tr = document.createElement('tr');
     const th = document.createElement('th');
     th.scope = 'row';
-    th.textContent = month;
+    th.textContent = MONTHS[m];
     tr.append(th);
     for (const f of fractions) {
       const td = document.createElement('td');
@@ -277,7 +289,7 @@ function renderSchedule(region: RegionData): void {
       tr.append(td);
     }
     tbody.append(tr);
-  });
+  }
 
   el.scheduleTable.innerHTML = '';
   el.scheduleTable.append(thead, tbody);
@@ -301,7 +313,8 @@ async function copyToClipboard(text: string, okMessage: string): Promise<void> {
 function renderSubscribe(region: RegionData): void {
   const entry = loaded!.entry;
   const url = icsUrl(entry, region.rejon);
-  const name = `Odpady Czerwonak - Rejon ${region.rejon} (${entry.rok})`;
+  const label = regionLabel(region.rejon);
+  const name = `Odpady Czerwonak - Rejon ${label} (${entry.rok})`;
   const platform = detectPlatform(navigator.userAgent, navigator.maxTouchPoints ?? 0);
 
   el.icsLink.href = url;
@@ -345,8 +358,8 @@ function renderSubscribe(region: RegionData): void {
   el.btnDownload.onclick = () => {
     if (!currentRegion) return;
     const events = buildWasteEvents(currentRegion, entry.rok, loaded!.regions.fractions, enabled);
-    const content = wasteEventsToIcs({ name, description: `Rejon ${region.rejon}, Gmina Czerwonak`, events });
-    downloadText(`odpady-czerwonak-${entry.rok}-rejon-${region.rejon}.ics`, content);
+    const content = wasteEventsToIcs({ name, description: `Rejon ${label}, Gmina Czerwonak`, events });
+    downloadText(`odpady-czerwonak-${entry.rok}-rejon-${label}.ics`, content);
   };
   el.btnCopy.onclick = () => void copyToClipboard(url, 'Skopiowano link subskrypcji do schowka.');
 
@@ -398,7 +411,7 @@ async function setupYear(rok: number): Promise<void> {
     loaded.streets.localities.map((l) => ({
       value: l.miasto,
       label: l.miasto,
-      hint: l.pelny_rejon != null ? `Rejon ${l.pelny_rejon}` : 'wybierz ulicę',
+      hint: l.pelny_rejon != null ? `Rejon ${regionLabel(l.pelny_rejon)}` : 'wybierz ulicę',
     })),
   );
   streetCombo.setItems([]);
