@@ -154,6 +154,15 @@ describe('subscribe links on Android', () => {
     expect(byId('hint-desktop').hidden).toBe(true);
     expect(byId('hint-ios').hidden).toBe(true);
   });
+
+  it('documents the long-press workaround that keeps the link in the browser', () => {
+    const hint = byId('hint-android').textContent ?? '';
+    expect(hint).toContain('Przytrzymaj');
+    expect(hint).toContain('Otwórz w nowej karcie');
+    // The long-press path never fires the button's click handler, so the hint
+    // has to tell the user to copy the feed link themselves first.
+    expect(hint).toContain('Kopiuj link subskrypcji');
+  });
 });
 
 describe('subscribe links on iPhone', () => {
