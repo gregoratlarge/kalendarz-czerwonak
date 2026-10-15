@@ -56,6 +56,7 @@ const el = {
   hintDesktop: $('hint-desktop'),
   hintAndroid: $('hint-android'),
   hintIos: $('hint-ios'),
+  copyConfirm: $('copy-confirm'),
 };
 
 let years: YearIndexEntry[] = [];
@@ -283,12 +284,18 @@ function renderSchedule(region: RegionData): void {
 }
 
 async function copyToClipboard(text: string, okMessage: string): Promise<void> {
+  let message: string;
   try {
     await navigator.clipboard.writeText(text);
-    setStatus(okMessage);
+    message = okMessage;
   } catch {
-    setStatus('Nie udało się skopiować - skopiuj link ręcznie.');
+    message = 'Nie udało się skopiować - skopiuj link ręcznie.';
   }
+  // #status sits above the result panel, so on a phone it is scrolled out of
+  // view by the time the user taps a subscribe button. Repeat it in place too.
+  setStatus(message);
+  el.copyConfirm.textContent = message;
+  el.copyConfirm.hidden = false;
 }
 
 function renderSubscribe(region: RegionData): void {

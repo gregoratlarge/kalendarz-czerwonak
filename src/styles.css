@@ -378,6 +378,13 @@ input:focus,
   margin: 0.25rem 0;
 }
 
+.copy-confirm {
+  margin: 0.6rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--brand);
+}
+
 #calendar {
   --fc-border-color: var(--line);
   --fc-today-bg-color: #f0fdf4;

@@ -138,6 +138,11 @@ describe('subscribe links on Android', () => {
       expect(writeText).toHaveBeenCalledWith(expect.stringMatching(/\/ics\/\d{4}\/rejon-\d+\.ics$/));
     });
     expect(document.querySelector('#status')?.textContent).toContain('Skopiowano link do schowka');
+    // The confirmation must also appear next to the buttons, where the user is
+    // looking, because #status is above the (scrolled-away) result panel.
+    const confirm = byId('copy-confirm');
+    expect(confirm.hidden).toBe(false);
+    expect(confirm.textContent).toContain('Skopiowano link do schowka');
   });
 
   it('hides the webcal button, which has no handler on Android', () => {
