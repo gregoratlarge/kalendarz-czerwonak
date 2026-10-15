@@ -18,5 +18,10 @@ export function detectPlatform(ua: string, maxTouchPoints: number): Platform {
   // iPadOS 13+ reports itself as macOS to stay compatible with desktop sites;
   // a real Mac has no touch digitiser, so touch count disambiguates.
   if (/Macintosh|Mac OS X/i.test(ua) && maxTouchPoints > 1) return 'ios';
+  // Chrome and Firefox on Android in "Desktop site" mode drop every Android
+  // marker and report X11; Linux x86_64 instead, so a touchscreen is the only
+  // giveaway. ChromeOS says "X11; CrOS", and real Linux laptops with touch
+  // panels are rare - and the Android advice still holds on those anyway.
+  if (/X11; Linux/i.test(ua) && maxTouchPoints > 1) return 'android';
   return 'desktop';
 }

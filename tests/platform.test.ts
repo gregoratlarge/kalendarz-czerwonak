@@ -17,6 +17,12 @@ const UA = {
   desktopChrome:
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
   desktopFirefox: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0',
+  // "Desktop site" mode on Android: no Android, no Mobile, and X11; Linux.
+  androidDesktopSite:
+    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  firefoxAndroidDesktopSite: 'Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0',
+  chromeOs:
+    'Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
 };
 
 describe('detectPlatform', () => {
@@ -41,6 +47,16 @@ describe('detectPlatform', () => {
   it('treats a real Mac as desktop even though it matches the macOS UA', () => {
     expect(detectPlatform(UA.ipadOs13, 0)).toBe('desktop');
     expect(detectPlatform(UA.desktopChrome, 0)).toBe('desktop');
+  });
+
+  it('detects Android in "Desktop site" mode, which hides every Android marker', () => {
+    expect(detectPlatform(UA.androidDesktopSite, 5)).toBe('android');
+    expect(detectPlatform(UA.firefoxAndroidDesktopSite, 5)).toBe('android');
+  });
+
+  it('leaves a real Linux desktop and ChromeOS alone', () => {
+    expect(detectPlatform(UA.androidDesktopSite, 0)).toBe('desktop');
+    expect(detectPlatform(UA.chromeOs, 5)).toBe('desktop');
   });
 
   it('treats a touchscreen Windows laptop as desktop', () => {

@@ -113,6 +113,10 @@ describe('subscribe links on desktop', () => {
     expect(link.getAttribute('href')).toMatch(/^https?:\/\/.+\/ics\/\d{4}\/rejon-\d+\.ics$/);
     expect(link.textContent).toBe(link.getAttribute('href'));
   });
+
+  it('keeps the plain button label, with no long-press advice', () => {
+    expect(byId<HTMLAnchorElement>('btn-google').textContent).toBe('Dodaj do Google Calendar');
+  });
 });
 
 describe('subscribe links on Android', () => {
@@ -155,13 +159,26 @@ describe('subscribe links on Android', () => {
     expect(byId('hint-ios').hidden).toBe(true);
   });
 
-  it('documents the long-press workaround that keeps the link in the browser', () => {
+  it('documents the long-press workaround on the button itself', () => {
+    // The hint block sits below the calendar and is easy to miss, so the
+    // instruction has to be on the control the user actually taps.
+    const label = byId<HTMLAnchorElement>('btn-google').textContent ?? '';
+    expect(label).toContain('przytrzymaj');
+    expect(label).toContain('Otwórz w nowej karcie');
+
     const hint = byId('hint-android').textContent ?? '';
     expect(hint).toContain('Przytrzymaj');
-    expect(hint).toContain('Otwórz w nowej karcie');
-    // The long-press path never fires the button's click handler, so the hint
-    // has to tell the user to copy the feed link themselves first.
     expect(hint).toContain('Kopiuj link subskrypcji');
+  });
+
+  it('copies the feed URL on long-press, which never fires onclick', async () => {
+    writeText.mockClear();
+    byId('btn-google').dispatchEvent(
+      new MouseEvent('contextmenu', { bubbles: true, cancelable: true }),
+    );
+    await vi.waitFor(() => {
+      expect(writeText).toHaveBeenCalledWith(expect.stringMatching(/\/ics\/\d{4}\/rejon-\d+\.ics$/));
+    });
   });
 });
 

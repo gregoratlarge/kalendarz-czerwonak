@@ -314,12 +314,23 @@ function renderSubscribe(region: RegionData): void {
   if (platform === 'desktop') {
     el.btnGoogle.href = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(webcalUrl)}`;
     el.btnGoogle.onclick = null;
+    el.btnGoogle.oncontextmenu = null;
   } else {
     // On a phone the only real route is Google's "Add by URL" form, which wants
-    // the feed URL pasted. Copy it first so the paste is a single tap.
-    el.btnGoogle.href = GOOGLE_ADD_URL;
-    el.btnGoogle.onclick = () =>
+    // the feed URL pasted. Copy it so the paste is a single tap.
+    const copyGoogleUrl = () =>
       void copyToClipboard(url, 'Skopiowano link do schowka - wklej go w polu Google.');
+    el.btnGoogle.href = GOOGLE_ADD_URL;
+    el.btnGoogle.onclick = copyGoogleUrl;
+    // On Android a plain tap hands the link to the Calendar app, which cannot
+    // subscribe to a feed. Long-pressing and picking "Open in new tab" keeps it
+    // in the browser, but that path never fires onclick, so copy here too and
+    // put the instruction on the button, where the hint block cannot be missed.
+    el.btnGoogle.oncontextmenu = copyGoogleUrl;
+    el.btnGoogle.textContent =
+      platform === 'android'
+        ? 'Dodaj do Google Calendar (przytrzymaj i wybierz „Otwórz w nowej karcie”)'
+        : 'Dodaj do Google Calendar';
   }
   // webcal:// has no handler on Android, so the button would just do nothing.
   el.btnWebcal.hidden = platform === 'android';
