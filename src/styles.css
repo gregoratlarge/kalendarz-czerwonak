@@ -369,6 +369,15 @@ input:focus,
   color: var(--ink);
 }
 
+.hint__steps {
+  margin: 0.3rem 0 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.hint__steps li {
+  margin: 0.25rem 0;
+}
+
 #calendar {
   --fc-border-color: var(--line);
   --fc-today-bg-color: #f0fdf4;

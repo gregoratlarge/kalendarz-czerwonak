@@ -5,6 +5,7 @@ import { buildWasteEvents } from './lib/events';
 import { wasteEventsToIcs, downloadText } from './ics-export';
 import { resolveAddress, describeEntry } from './resolve';
 import { loadIndex, loadYear, regionByNumber, icsUrl, type LoadedYear } from './data';
+import { detectPlatform } from './platform';
 import type { YearIndexEntry, RegionData, StreetEntry } from './lib/types';
 
 const MONTHS = [
@@ -25,6 +26,10 @@ const SHORT_FRACTION: Record<string, string> = {
 
 const SOURCE_URL =
   'https://czerwonak.pl/pl/mieszkaniec/informacje/aktualnosci/harmonogram-wywozu-odpadow-na-rok-2026/9588';
+
+// Google Calendar's "Add by URL" form. Used on phones, where the mobile apps
+// cannot subscribe to a feed and the /render?cid= deep link does not work.
+const GOOGLE_ADD_URL = 'https://calendar.google.com/calendar/r/settings/addbyurl';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
 
@@ -48,6 +53,9 @@ const el = {
   fractionFeeds: $<HTMLUListElement>('fraction-feeds'),
   sourceLink: $<HTMLAnchorElement>('source-link'),
   calendarHost: $('calendar'),
+  hintDesktop: $('hint-desktop'),
+  hintAndroid: $('hint-android'),
+  hintIos: $('hint-ios'),
 };
 
 let years: YearIndexEntry[] = [];
@@ -274,33 +282,55 @@ function renderSchedule(region: RegionData): void {
   el.scheduleTable.append(thead, tbody);
 }
 
+async function copyToClipboard(text: string, okMessage: string): Promise<void> {
+  try {
+    await navigator.clipboard.writeText(text);
+    setStatus(okMessage);
+  } catch {
+    setStatus('Nie udało się skopiować - skopiuj link ręcznie.');
+  }
+}
+
 function renderSubscribe(region: RegionData): void {
   const entry = loaded!.entry;
   const url = icsUrl(entry, region.rejon);
   const name = `Odpady Czerwonak - Rejon ${region.rejon} (${entry.rok})`;
+  const platform = detectPlatform(navigator.userAgent, navigator.maxTouchPoints ?? 0);
 
   el.icsLink.href = url;
   el.icsLink.textContent = url;
-  // Google's /render?cid= deep link is broken with an https:// value
-  // (issuetracker 442619500); the webcal:// form is the one that still works
-  // on the web. Apple/Outlook use the plain webcal:// scheme.
+  // Google's /render?cid= deep link only works in a desktop browser: the
+  // https:// variant is broken (issuetracker 442619500), and on a phone the
+  // Calendar app opens but cannot subscribe to a feed at all. Apple/Outlook use
+  // the plain webcal:// scheme, which iOS handles natively with one tap.
   const webcalUrl = url.replace(/^https?:/, 'webcal:');
-  el.btnGoogle.href = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(webcalUrl)}`;
+  if (platform === 'desktop') {
+    el.btnGoogle.href = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(webcalUrl)}`;
+    el.btnGoogle.onclick = null;
+  } else {
+    // On a phone the only real route is Google's "Add by URL" form, which wants
+    // the feed URL pasted. Copy it first so the paste is a single tap.
+    el.btnGoogle.href = GOOGLE_ADD_URL;
+    el.btnGoogle.onclick = () =>
+      void copyToClipboard(url, 'Skopiowano link do schowka - wklej go w polu Google.');
+  }
+  // webcal:// has no handler on Android, so the button would just do nothing.
+  el.btnWebcal.hidden = platform === 'android';
+  el.btnWebcal.textContent =
+    platform === 'ios' ? 'Kalendarz Apple (jednym dotknięciem)' : 'Apple / Outlook (webcal)';
   el.btnWebcal.href = webcalUrl;
+
+  el.hintDesktop.hidden = platform !== 'desktop';
+  el.hintAndroid.hidden = platform !== 'android';
+  el.hintIos.hidden = platform !== 'ios';
+
   el.btnDownload.onclick = () => {
     if (!currentRegion) return;
     const events = buildWasteEvents(currentRegion, entry.rok, loaded!.regions.fractions, enabled);
     const content = wasteEventsToIcs({ name, description: `Rejon ${region.rejon}, Gmina Czerwonak`, events });
     downloadText(`odpady-czerwonak-${entry.rok}-rejon-${region.rejon}.ics`, content);
   };
-  el.btnCopy.onclick = async () => {
-    try {
-      await navigator.clipboard.writeText(url);
-      setStatus('Skopiowano link subskrypcji do schowka.');
-    } catch {
-      setStatus('Nie udało się skopiować - skopiuj link ręcznie.');
-    }
-  };
+  el.btnCopy.onclick = () => void copyToClipboard(url, 'Skopiowano link subskrypcji do schowka.');
 
   el.fractionFeeds.innerHTML = '';
   for (const f of loaded!.regions.fractions) {

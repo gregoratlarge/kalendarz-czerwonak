@@ -5,6 +5,15 @@ import { join } from 'node:path';
 
 const ROOT = process.cwd();
 
+const DESKTOP_UA =
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
+const ANDROID_UA =
+  'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36';
+const IPHONE_UA =
+  'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1';
+
+const writeText = vi.fn(async (_text: string) => {});
+
 function fixture(path: string): unknown {
   return JSON.parse(readFileSync(join(ROOT, 'public', path), 'utf8'));
 }
@@ -18,6 +27,11 @@ function bodyHtml(): string {
 
 function tick(): Promise<void> {
   return new Promise((r) => setTimeout(r, 0));
+}
+
+function setPlatform(ua: string, maxTouchPoints = 0): void {
+  Object.defineProperty(window.navigator, 'userAgent', { value: ua, configurable: true });
+  Object.defineProperty(window.navigator, 'maxTouchPoints', { value: maxTouchPoints, configurable: true });
 }
 
 async function choose(comboId: string, text: string): Promise<void> {
@@ -35,7 +49,17 @@ async function choose(comboId: string, text: string): Promise<void> {
   await tick();
 }
 
+/** Re-select the locality so renderSubscribe() runs again for the new platform. */
+async function rerenderFor(ua: string, maxTouchPoints = 0): Promise<void> {
+  setPlatform(ua, maxTouchPoints);
+  await choose('city-combo', 'Owińska');
+}
+
+const byId = <T extends HTMLElement>(id: string): T => document.getElementById(id) as T;
+
 beforeAll(async () => {
+  setPlatform(DESKTOP_UA);
+  Object.defineProperty(window.navigator, 'clipboard', { value: { writeText }, configurable: true });
   document.body.innerHTML = bodyHtml();
   vi.stubGlobal('fetch', async (url: string | URL) => {
     const u = String(url);
@@ -58,17 +82,16 @@ beforeAll(async () => {
   await choose('city-combo', 'Owińska');
 });
 
-describe('subscribe links', () => {
+describe('subscribe links on desktop', () => {
   it('builds a Google Calendar link using the webcal scheme', () => {
-    const google = document.querySelector<HTMLAnchorElement>('#btn-google')!;
-    const href = google.getAttribute('href') ?? '';
+    const href = byId<HTMLAnchorElement>('btn-google').getAttribute('href') ?? '';
     expect(href.startsWith('https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2F')).toBe(true);
     expect(href).not.toContain('cid=https');
   });
 
   it('points the Apple / Outlook button at a webcal:// URL', () => {
-    const webcal = document.querySelector<HTMLAnchorElement>('#btn-webcal')!;
-    expect(webcal.getAttribute('href')).toMatch(/^webcal:\/\//);
+    expect(byId<HTMLAnchorElement>('btn-webcal').getAttribute('href')).toMatch(/^webcal:\/\//);
+    expect(byId<HTMLAnchorElement>('btn-webcal').textContent).toBe('Apple / Outlook (webcal)');
   });
 
   it('offers the manual "From URL" fallback for Google', () => {
@@ -79,9 +102,73 @@ describe('subscribe links', () => {
     );
   });
 
+  it('shows only the desktop hint', () => {
+    expect(byId('hint-desktop').hidden).toBe(false);
+    expect(byId('hint-android').hidden).toBe(true);
+    expect(byId('hint-ios').hidden).toBe(true);
+  });
+
   it('shows the subscription URL in the link field', () => {
-    const link = document.querySelector<HTMLAnchorElement>('#ics-link')!;
+    const link = byId<HTMLAnchorElement>('ics-link');
     expect(link.getAttribute('href')).toMatch(/^https?:\/\/.+\/ics\/\d{4}\/rejon-\d+\.ics$/);
     expect(link.textContent).toBe(link.getAttribute('href'));
+  });
+});
+
+describe('subscribe links on Android', () => {
+  beforeAll(async () => {
+    await rerenderFor(ANDROID_UA, 5);
+  });
+
+  it('opens Google\'s "Add by URL" form instead of the desktop deep link', () => {
+    expect(byId<HTMLAnchorElement>('btn-google').getAttribute('href')).toBe(
+      'https://calendar.google.com/calendar/r/settings/addbyurl',
+    );
+  });
+
+  it('copies the feed URL before the user pastes it', async () => {
+    writeText.mockClear();
+    const google = byId<HTMLAnchorElement>('btn-google');
+    // Drop the href for the click so jsdom does not attempt a navigation.
+    const href = google.getAttribute('href');
+    google.removeAttribute('href');
+    google.click();
+    google.setAttribute('href', href ?? '');
+    await vi.waitFor(() => {
+      expect(writeText).toHaveBeenCalledWith(expect.stringMatching(/\/ics\/\d{4}\/rejon-\d+\.ics$/));
+    });
+    expect(document.querySelector('#status')?.textContent).toContain('Skopiowano link do schowka');
+  });
+
+  it('hides the webcal button, which has no handler on Android', () => {
+    expect(byId('btn-webcal').hidden).toBe(true);
+  });
+
+  it('shows only the Android hint', () => {
+    expect(byId('hint-android').hidden).toBe(false);
+    expect(byId('hint-desktop').hidden).toBe(true);
+    expect(byId('hint-ios').hidden).toBe(true);
+  });
+});
+
+describe('subscribe links on iPhone', () => {
+  beforeAll(async () => {
+    await rerenderFor(IPHONE_UA, 5);
+  });
+
+  it('opens Google\'s "Add by URL" form and keeps the webcal one-tap option', () => {
+    expect(byId<HTMLAnchorElement>('btn-google').getAttribute('href')).toBe(
+      'https://calendar.google.com/calendar/r/settings/addbyurl',
+    );
+    const webcal = byId<HTMLAnchorElement>('btn-webcal');
+    expect(webcal.hidden).toBe(false);
+    expect(webcal.getAttribute('href')).toMatch(/^webcal:\/\//);
+    expect(webcal.textContent).toBe('Kalendarz Apple (jednym dotknięciem)');
+  });
+
+  it('shows only the iOS hint', () => {
+    expect(byId('hint-ios').hidden).toBe(false);
+    expect(byId('hint-desktop').hidden).toBe(true);
+    expect(byId('hint-android').hidden).toBe(true);
   });
 });

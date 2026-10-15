@@ -74,7 +74,7 @@
             </div>
             <p class="muted small">Link: <a id="ics-link" href="#" target="_blank" rel="noopener"></a></p>
 
-            <div class="hint">
+            <div id="hint-desktop" class="hint">
               <p>
                 <strong>Google nie chciał dodać kalendarza?</strong>
                 Otwórz Google Calendar na komputerze, obok „Inne kalendarze” kliknij <strong>+</strong> →
@@ -87,6 +87,48 @@
                 rel="noopener"
                 >Otwórz „Z adresu URL” w Google Calendar</a
               >
+            </div>
+
+            <div id="hint-android" class="hint" hidden>
+              <p><strong>Jak dodać kalendarz Google na telefonie</strong></p>
+              <ol class="hint__steps">
+                <li>
+                  Kliknij <strong>Dodaj do Google Calendar</strong> - link zostanie skopiowany do schowka, a w
+                  przeglądarce otworzy się strona Google.
+                </li>
+                <li>
+                  Jeśli nie widzisz pola z adresem, kliknij <strong>⋮</strong> i włącz
+                  <strong>Widok komputerowy</strong>.
+                </li>
+                <li>
+                  Kliknij <strong>+</strong> przy „Inne kalendarze” → <strong>Z adresu URL</strong>, wklej link i
+                  kliknij <strong>Dodaj kalendarz</strong>.
+                </li>
+                <li>
+                  W aplikacji Google Calendar włącz synchronizację nowego kalendarza
+                  (Menu → Ustawienia → nazwa kalendarza → synchronizacja).
+                </li>
+              </ol>
+              <p>
+                Strona otworzyła się w aplikacji zamiast w przeglądarce? Wejdź w Ustawienia telefonu → Aplikacje →
+                Google Calendar → Otwieranie linków i wyłącz <strong>Otwieraj obsługiwane linki</strong>.
+              </p>
+            </div>
+
+            <div id="hint-ios" class="hint" hidden>
+              <p><strong>Na iPhonie masz dwie drogi</strong></p>
+              <ul class="hint__steps">
+                <li>
+                  <strong>Kalendarz Apple</strong> - wystarczy jedno dotknięcie, ale kalendarz zostaje na tym
+                  telefonie i nie synchronizuje się z kontem Google.
+                </li>
+                <li>
+                  <strong>Google Calendar</strong> - kliknij przycisk Google, w przeglądarce otworzy się strona
+                  Google ze skopiowanym linkiem. Kliknij <strong>+</strong> przy „Inne kalendarze” →
+                  <strong>Z adresu URL</strong>, wklej link i kliknij <strong>Dodaj kalendarz</strong>. Kalendarz
+                  pojawi się w aplikacji Google Calendar.
+                </li>
+              </ul>
             </div>
 
             <details class="advanced">
