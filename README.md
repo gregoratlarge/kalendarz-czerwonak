@@ -108,6 +108,12 @@ docs/                    # notatki projektowe (decyzje, weryfikacja)
 - „Bioodpady - drzewka świąteczne” to zbiórka styczniowa; w tym okresie nie ma
   żadnych terminów, więc frakcja nie generuje plików `.ics`.
 
+## Analityka
+
+Strona wysyła zanonimizowane statystyki odwiedzin do **Google Analytics 4**
+(tag `G-DT0L3T6ZHD`). Snippet gtag.js jest wklejony w `<head>` pliku
+`index.html` i trafia do builda produkcyjnego bez dodatkowej konfiguracji.
+
 ## Wdrożenie
 
 Workflow `.github/workflows/deploy.yml` buduje projekt i publikuje `dist/` na
