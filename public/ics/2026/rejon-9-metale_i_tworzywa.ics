@@ -9,7 +9,7 @@ X-WR-CALDESC:Metale i tworzywa sztuczne - Rejon 9\, Gmina Czerwonak\, 2026
 REFRESH-INTERVAL;VALUE=DURATION:PT24H
 X-PUBLISHED-TTL:PT24H
 BEGIN:VEVENT
-UID:odpady-2026-rejon9-20261001-metale_i_tworzywa@gregoratlarge.github.io
+UID:odpady-2026-rejon9-20261001-metale_i_tworzywa@grgzx.github.io
 DTSTAMP:20261001T000000Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
@@ -18,7 +18,7 @@ CATEGORIES:Metale i tworzywa sztuczne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon9-20261015-metale_i_tworzywa@gregoratlarge.github.io
+UID:odpady-2026-rejon9-20261015-metale_i_tworzywa@grgzx.github.io
 DTSTAMP:20261015T000000Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
@@ -27,7 +27,7 @@ CATEGORIES:Metale i tworzywa sztuczne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon9-20261029-metale_i_tworzywa@gregoratlarge.github.io
+UID:odpady-2026-rejon9-20261029-metale_i_tworzywa@grgzx.github.io
 DTSTAMP:20261029T000000Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
@@ -36,7 +36,7 @@ CATEGORIES:Metale i tworzywa sztuczne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon9-20261112-metale_i_tworzywa@gregoratlarge.github.io
+UID:odpady-2026-rejon9-20261112-metale_i_tworzywa@grgzx.github.io
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
@@ -45,7 +45,7 @@ CATEGORIES:Metale i tworzywa sztuczne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon9-20261126-metale_i_tworzywa@gregoratlarge.github.io
+UID:odpady-2026-rejon9-20261126-metale_i_tworzywa@grgzx.github.io
 DTSTAMP:20261126T000000Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
@@ -54,7 +54,7 @@ CATEGORIES:Metale i tworzywa sztuczne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon9-20261210-metale_i_tworzywa@gregoratlarge.github.io
+UID:odpady-2026-rejon9-20261210-metale_i_tworzywa@grgzx.github.io
 DTSTAMP:20261210T000000Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
@@ -63,7 +63,7 @@ CATEGORIES:Metale i tworzywa sztuczne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon9-20261223-metale_i_tworzywa@gregoratlarge.github.io
+UID:odpady-2026-rejon9-20261223-metale_i_tworzywa@grgzx.github.io
 DTSTAMP:20261223T000000Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224

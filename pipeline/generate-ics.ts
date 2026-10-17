@@ -3,7 +3,7 @@ import { generateIcs, type IcsEvent } from '../src/lib/ics.ts';
 import { regionLabel } from '../src/lib/regions.ts';
 import type { RegionData } from '../src/lib/types.ts';
 
-const UID_DOMAIN = 'gregoratlarge.github.io';
+const UID_DOMAIN = 'grgzx.github.io';
 
 function pad(n: number): string {
   return String(n).padStart(2, '0');

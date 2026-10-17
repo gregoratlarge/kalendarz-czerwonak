@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 
-// Deployed to https://gregoratlarge.github.io/kalendarz-czerwonak/
+// Deployed to https://grgzx.github.io/kalendarz-czerwonak/
 export default defineConfig({
   base: process.env.BASE_PATH ?? '/kalendarz-czerwonak/',
   publicDir: 'public',

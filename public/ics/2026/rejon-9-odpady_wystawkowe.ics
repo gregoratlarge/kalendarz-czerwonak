@@ -9,7 +9,7 @@ X-WR-CALDESC:Odpady wystawkowe - Rejon 9\, Gmina Czerwonak\, 2026
 REFRESH-INTERVAL;VALUE=DURATION:PT24H
 X-PUBLISHED-TTL:PT24H
 BEGIN:VEVENT
-UID:odpady-2026-rejon9-20261027-odpady_wystawkowe@gregoratlarge.github.io
+UID:odpady-2026-rejon9-20261027-odpady_wystawkowe@grgzx.github.io
 DTSTAMP:20261027T000000Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028

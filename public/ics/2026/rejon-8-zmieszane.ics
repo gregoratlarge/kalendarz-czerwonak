@@ -9,7 +9,7 @@ X-WR-CALDESC:Zmieszane odpady komunalne - Rejon 8\, Gmina Czerwonak\, 2026
 REFRESH-INTERVAL;VALUE=DURATION:PT24H
 X-PUBLISHED-TTL:PT24H
 BEGIN:VEVENT
-UID:odpady-2026-rejon8-20261008-zmieszane@gregoratlarge.github.io
+UID:odpady-2026-rejon8-20261008-zmieszane@grgzx.github.io
 DTSTAMP:20261008T000000Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
@@ -18,7 +18,7 @@ CATEGORIES:Zmieszane odpady komunalne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon8-20261022-zmieszane@gregoratlarge.github.io
+UID:odpady-2026-rejon8-20261022-zmieszane@grgzx.github.io
 DTSTAMP:20261022T000000Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
@@ -27,7 +27,7 @@ CATEGORIES:Zmieszane odpady komunalne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon8-20261105-zmieszane@gregoratlarge.github.io
+UID:odpady-2026-rejon8-20261105-zmieszane@grgzx.github.io
 DTSTAMP:20261105T000000Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
@@ -36,7 +36,7 @@ CATEGORIES:Zmieszane odpady komunalne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon8-20261119-zmieszane@gregoratlarge.github.io
+UID:odpady-2026-rejon8-20261119-zmieszane@grgzx.github.io
 DTSTAMP:20261119T000000Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
@@ -45,7 +45,7 @@ CATEGORIES:Zmieszane odpady komunalne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon8-20261203-zmieszane@gregoratlarge.github.io
+UID:odpady-2026-rejon8-20261203-zmieszane@grgzx.github.io
 DTSTAMP:20261203T000000Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
@@ -54,7 +54,7 @@ CATEGORIES:Zmieszane odpady komunalne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon8-20261217-zmieszane@gregoratlarge.github.io
+UID:odpady-2026-rejon8-20261217-zmieszane@grgzx.github.io
 DTSTAMP:20261217T000000Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261218
@@ -63,7 +63,7 @@ CATEGORIES:Zmieszane odpady komunalne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon8-20261231-zmieszane@gregoratlarge.github.io
+UID:odpady-2026-rejon8-20261231-zmieszane@grgzx.github.io
 DTSTAMP:20261231T000000Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101

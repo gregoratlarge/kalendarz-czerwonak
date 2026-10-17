@@ -4,7 +4,7 @@ Statyczna strona (GitHub Pages) dla mieszkańców gminy Czerwonak: wyszukaj
 miejscowość i ulicę, zobacz kalendarz odbioru odpadów i **subskrybuj** go
 w swoim kalendarzu (Google / Apple / Outlook) albo pobierz plik `.ics`.
 
-- Strona: <https://gregoratlarge.github.io/kalendarz-czerwonak/>
+- Strona: <https://grgzx.github.io/kalendarz-czerwonak/>
 - Dane źródłowe: harmonogramy PDF (nowe rejony) z [czerwonak.pl](https://www.czerwonak.pl/pl/mieszkaniec/informacje/aktualnosci/nowe-harmonogramy-odbioru-odpadow-komunalnych-z-nieruchomosci-znajdujacych-sie-na-terenie-gminy-czerwonak/10734)
 
 > **Aktualny zakres danych:** październik - grudzień 2026, według nowego podziału
@@ -127,7 +127,7 @@ co niektóre aplikacje kalendarza odrzucają. Jeśli napotkasz ten problem,
 subskrybuj feed przez **jsDelivr**, który zawsze zwraca `text/calendar`:
 
 ```
-https://cdn.jsdelivr.net/gh/gregoratlarge/kalendarz-czerwonak@main/public/ics/2026/rejon-1.ics
+https://cdn.jsdelivr.net/gh/grgzx/kalendarz-czerwonak@main/public/ics/2026/rejon-1.ics
 ```
 
 Linki „Apple / Outlook (webcal)” oraz pobieranie pliku działają niezależnie od

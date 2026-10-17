@@ -9,7 +9,7 @@ X-WR-CALDESC:Zmieszane odpady komunalne - Rejon 7\, Gmina Czerwonak\, 2026
 REFRESH-INTERVAL;VALUE=DURATION:PT24H
 X-PUBLISHED-TTL:PT24H
 BEGIN:VEVENT
-UID:odpady-2026-rejon7-20261014-zmieszane@gregoratlarge.github.io
+UID:odpady-2026-rejon7-20261014-zmieszane@grgzx.github.io
 DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261014
 DTEND;VALUE=DATE:20261015
@@ -18,7 +18,7 @@ CATEGORIES:Zmieszane odpady komunalne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon7-20261028-zmieszane@gregoratlarge.github.io
+UID:odpady-2026-rejon7-20261028-zmieszane@grgzx.github.io
 DTSTAMP:20261028T000000Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
@@ -27,7 +27,7 @@ CATEGORIES:Zmieszane odpady komunalne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon7-20261112-zmieszane@gregoratlarge.github.io
+UID:odpady-2026-rejon7-20261112-zmieszane@grgzx.github.io
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
@@ -36,7 +36,7 @@ CATEGORIES:Zmieszane odpady komunalne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon7-20261125-zmieszane@gregoratlarge.github.io
+UID:odpady-2026-rejon7-20261125-zmieszane@grgzx.github.io
 DTSTAMP:20261125T000000Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
@@ -45,7 +45,7 @@ CATEGORIES:Zmieszane odpady komunalne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon7-20261209-zmieszane@gregoratlarge.github.io
+UID:odpady-2026-rejon7-20261209-zmieszane@grgzx.github.io
 DTSTAMP:20261209T000000Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
@@ -54,7 +54,7 @@ CATEGORIES:Zmieszane odpady komunalne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon7-20261223-zmieszane@gregoratlarge.github.io
+UID:odpady-2026-rejon7-20261223-zmieszane@grgzx.github.io
 DTSTAMP:20261223T000000Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224

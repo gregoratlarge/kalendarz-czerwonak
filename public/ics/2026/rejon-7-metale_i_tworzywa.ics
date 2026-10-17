@@ -9,7 +9,7 @@ X-WR-CALDESC:Metale i tworzywa sztuczne - Rejon 7\, Gmina Czerwonak\, 2026
 REFRESH-INTERVAL;VALUE=DURATION:PT24H
 X-PUBLISHED-TTL:PT24H
 BEGIN:VEVENT
-UID:odpady-2026-rejon7-20261013-metale_i_tworzywa@gregoratlarge.github.io
+UID:odpady-2026-rejon7-20261013-metale_i_tworzywa@grgzx.github.io
 DTSTAMP:20261013T000000Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
@@ -18,7 +18,7 @@ CATEGORIES:Metale i tworzywa sztuczne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon7-20261027-metale_i_tworzywa@gregoratlarge.github.io
+UID:odpady-2026-rejon7-20261027-metale_i_tworzywa@grgzx.github.io
 DTSTAMP:20261027T000000Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
@@ -27,7 +27,7 @@ CATEGORIES:Metale i tworzywa sztuczne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon7-20261110-metale_i_tworzywa@gregoratlarge.github.io
+UID:odpady-2026-rejon7-20261110-metale_i_tworzywa@grgzx.github.io
 DTSTAMP:20261110T000000Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
@@ -36,7 +36,7 @@ CATEGORIES:Metale i tworzywa sztuczne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon7-20261124-metale_i_tworzywa@gregoratlarge.github.io
+UID:odpady-2026-rejon7-20261124-metale_i_tworzywa@grgzx.github.io
 DTSTAMP:20261124T000000Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
@@ -45,7 +45,7 @@ CATEGORIES:Metale i tworzywa sztuczne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon7-20261208-metale_i_tworzywa@gregoratlarge.github.io
+UID:odpady-2026-rejon7-20261208-metale_i_tworzywa@grgzx.github.io
 DTSTAMP:20261208T000000Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
@@ -54,7 +54,7 @@ CATEGORIES:Metale i tworzywa sztuczne
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:odpady-2026-rejon7-20261222-metale_i_tworzywa@gregoratlarge.github.io
+UID:odpady-2026-rejon7-20261222-metale_i_tworzywa@grgzx.github.io
 DTSTAMP:20261222T000000Z
 DTSTART;VALUE=DATE:20261222
 DTEND;VALUE=DATE:20261223
