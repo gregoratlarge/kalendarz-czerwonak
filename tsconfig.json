@@ -14,8 +14,7 @@
     "verbatimModuleSyntax": true,
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "types": ["node", "vite/client"],
-    "baseUrl": "."
+    "types": ["node", "vite/client"]
   },
   "include": ["src", "pipeline", "vite.config.ts"]
 }
